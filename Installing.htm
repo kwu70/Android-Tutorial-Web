@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Android Tutorial</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="_scripts/tabs.js"></script>
+        <script src="_scripts/jquery-1.3.2.min.js"></script>
+        <script src="_scripts/zoomple-1.4.js"></script>
+        <script src="_scripts/zoomfun.js"></script>
+    </head>
+    <body class="background">
+        <header role="banner" class="header">
+            <div class="logo">
+                <div class="topLogo">Android Tutorial</div>
+                <div class="botLogo">Junior Capstone(Crazy 88s)</div>
+            </div>
+            <div class="navMenu">
+                <ul class="navMenuUl">
+                    <li><a href="home.htm">HOME</a></li>
+                    <li><a class="active" href="#">TUTORIAL</a></li>
+                </ul>
+            </div>
+        </header>
+        <main role="main">
+            <article role="article" class="mainContent">
+                <div class="sidebar">
+                    <div class="sideNav">
+                        <div class="sideHeader">Table of Content</div>
+                        <ol class="navDropDown" type="1">
+                            <li><a href="Intro.htm">Overview</a>
+                                <ul>
+                                    <li><a href="Intro.htm">What is Android&#63;</a></li>
+                                    <li><a href="Intro.htm">GIT MAD</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Installing.htm">Installing Android Studio</a></li>
+                            <li><a href="SettingUp.htm">Setting Up Android Studio</a></li>
+                            <li><a href="Emulator.htm">Setting up Emulator</a></li>
+                            <li><a href="Genymotion.htm">Genymotion</a></li>
+                            <li><a href="Activities.htm">Activities and Intents</a></li>
+                            <li><a href="UserInterface.htm">Android UI&nbsp;&nbsp;&nbsp;</a>
+                                <ul>
+                                    <li><a href="UserInterface.htm">Layouts<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">Creating new Layout</a></li>
+                                            <li><a href="UserInterface.htm">Relative Layout</a></li>
+                                            <li><a href="UserInterface.htm">Linear Layout</a></li>
+                                            <li><a href="UserInterface.htm">Frame Layout</a></li>
+                                            <li><a href="UserInterface.htm">Grid Layout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Text Views</a></li>
+                                    <li><a href="UserInterface.htm">Text Fields</a></li>
+                                    <li><a href="UserInterface.htm">Buttons</a></li>
+                                    <li><a href="UserInterface.htm">Spinner</a></li>
+                                    <li><a href="UserInterface.htm">Containers<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">List View</a></li>
+                                            <li><a href="UserInterface.htm">Grid View</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Date and Time<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">Date Picker</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Import Images</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="DPermanence.htm">Data Permanence</a>
+                                <ul>
+                                    <li><a href="DPermanence.htm">Getting Stated</a></li>
+                                    <li><a href="DPermanence.htm">Inserting Data</a></li>
+                                    <li><a href="DPermanence.htm">Selecting Data</a></li>
+                                    <li><a href="DPermanence.htm">Updating Data</a></li>
+                                    <li><a href="DPermanence.htm">Deleting Data</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="textContent">
+                    <h1 class="textHeading">Installing Android Studio</h1>
+                    <section class="text">
+                        <div id="tabContainer">
+                            <div id="tabs">
+                                <ul>
+                                    <li id="tab1"><h2><a href="#window">Windows</a></h2></li>
+                                    <li id="tab2"><h2><a href="#mac">Mac</a></h2></li>
+                                </ul>
+                            </div>
+                            <div id="containers" class="scrollBar">
+                                
+<!--******************************Window Section*****************************-->
+
+<div id="window">
+    <h2 id="installingOnWindows">Installing Android Studio on Windows</h2>
+    <nav role="navigation">
+        <ul>
+            <li><a href="#JDK" title="Java JDK">Installing Java Developer Kit (JDK)</a></li>
+            <li><a href="#wInstall" title="Installation">Installing Android Studio</a></li>
+        </ul>
+    </nav>
+    <p>To develop for Android you need to get an IDE for Android. Android Studio is arguably the best Android IDE since it was made by the creators of Android. This tutorial will be using Android Studio so it is highly recommended you get Android Studio.</p>
+    <section id="JDK">
+        <h3 class="scrollHeader">Installing Java Developer Kit (JDK)</h3>
+
+        <ul>
+            <li>Go to <a href="http://www.oracle.com/technetwork/java/index.html" title="Download Link" target="_blank">http://www.oracle.com/technetwork/java/index.html</a></li>
+            <li>Choose Java SE under Top Downloads</li>
+            <a href="images/installing/JDKImg1.png" class="zoomple"><img src="images/installing/JDKImg1.png" alt="Oracle" width="300px"></a>
+            <li>Choose JDK Download</li>
+            <a href="images/installing/JDKImg2.png" class="zoomple"><img src="images/installing/JDKImg2.png" alt="Oracle" width="300px"></a>
+            <li>Choose the most recent download <Strong>(appropriate OS)</Strong></li>
+            <a href="images/installing/JDKImg3.png" class="zoomple"><img src="images/installing/JDKImg3.png" alt="Oracle" width="300px"></a>
+            <li>Setting up environment variable
+                <ul>
+                    <li>Window 7
+                        <ul>
+                            <li>Choose &ldquo;Properties&rdquo; of the Computer</li>
+                            <a href="images/installing/JDKImg4.png" class="zoomple"><img src="images/installing/JDKImg4.png" alt="Oracle" width="300px"></a>
+                            <li>Click &ldquo;Advance system settings&rdquo;</li>
+                            <li>Click &ldquo;Environment Variables...&rdquo;
+                                <ul>
+                                    <li>Create Variable
+                                        <ul>
+                                            <li>Variable name&#58; JAVA_HOME</li>
+                                            <li>Variable Value&#58; C&#58;&#92;Program Files&#92;Java&#92;jdk1.8.0&#95;31 <Strong>(location of the JDK folder)</Strong></li>
+                                            <li>If you don't know where JDK folder is located
+                                                <ul>
+                                                    <li>Go to &ldquo;Program Files&rdquo; directory</li>
+                                                    <li>Search for Java</li>
+                                                    <li>Then you should find the JDK folder there</li>
+                                                </ul>
+                                            </li>
+                                            <li>Be sure to choose JDK folder <Strong>(<em class="Warning">NOT</em> JRE folder)</Strong></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section id="wInstall">
+        <h3 class="scrollHeader">Installing Android Studio</h3>
+        <ul>
+            <li>Go to <a href="http://developer.android.com/sdk/index.html" title="Android Developer" target="_blank">http://developer.android.com/sdk/index.html</a></li>
+            <li>Download Android Studio Installer
+                <ul>
+                    <li>Click "Download Android Studio for Windows"</li>
+                    <a href="images/installing/JDKImg5.png" class="zoomple"><img src="images/installing/JDKImg5.png" alt="Oracle" width="500px"></a>
+                    <li>Agree on the terms and conditions</li>
+                    <a href="images/installing/JDKImg6.png" class="zoomple"><img src="images/installing/JDKImg6.png" alt="Oracle" width="500px"></a>
+                    <li>Click "Download Android Studio for Windows"</li>
+                </ul>
+            </li>
+            <li>Click &ldquo;Next&rdquo; on Welcome screen</li>
+            <a href="images/installing/JDKImg7.png" class="zoomple"><img src="images/installing/JDKImg7.png" alt="Oracle" width="350px"></a>
+            <li>Click &ldquo;Next&rdquo; on Choose Components screen</li>
+            <a href="images/installing/JDKImg8.png" class="zoomple"><img src="images/installing/JDKImg8.png" alt="Oracle" width="350px"></a>
+            <li>Click &ldquo;I Agree&rdquo; on License Agreement screen</li>
+            <a href="images/installing/JDKImg9.png" class="zoomple"><img src="images/installing/JDKImg9.png" alt="Oracle" width="350px"></a>
+            <li>On Configuration Settings <em>(Install Locations)</em> Screen
+                <ul>
+                    <li>Recommended to leave &ldquo;Android Studio Installation Location&rdquo; default</li>
+                    <li>Change the location of the &ldquo;Android SDK Installation&rdquo;.<br>
+                        <Strong><em class="Warning">Note:</em> This should be placed somewhere other than under the Android Studio installation directory.</Strong></li>
+                    <li>Then click &ldquo;Next&rdquo;</li>
+                    <a href="images/installing/JDKImg10.png" class="zoomple"><img src="images/installing/JDKImg10.png" alt="Oracle" width="350px"></a>
+                </ul>
+            </li>
+            <li>Click &ldquo;Next&rdquo; to accept the default setting on Configuration Setting (Emulator Setup) screen</li>
+            <li>Click &ldquo;Install&rdquo;</li>
+            <li>This will take a few minutes to do the primary installation.</li>
+            <li>When you see the screen which indicates the installation is complete, click &ldquo;Next&rdquo;</li>
+            <a href="images/installing/JDKImg11.png" class="zoomple"><img src="images/installing/JDKImg11.png" alt="Oracle" width="400px"></a>
+            <li>Finally&#44; click &ldquo;Finish&rdquo; to start the Android Studio.</li>
+            <a href="images/installing/JDKImg12.png" class="zoomple"><img src="images/installing/JDKImg12.png" alt="Oracle" width="400px"></a>
+            <li>If this is the first time installing Android Studio&#46; the &ldquo;Setup Wizard&rdquo; screen will appear to download additional SDK components</li>
+            <a href="images/installing/JDKImg13.png" class="zoomple"><img src="images/installing/JDKImg13.png" alt="Oracle" width="400px"></a>
+        </ul>
+    </section>
+    <p><a href="#wInstall" title="Back to top">Back to top</a><br>&nbsp;</p>    
+    
+</div>
+                                
+<!--******************************Mac Section********************************-->
+
+<div id="mac">
+    <h2 id="installingOnMac">Installing Android Studio on Mac</h2>
+    <nav role="navigation">
+        <ul>
+            <li><a href="#mJDK" title="Java JDK">Installing Java Developer Kit (JDK)</a></li>
+            <li><a href="#mInstall" title="Installation">Installing Android Studio</a></li>
+        </ul>
+    </nav>
+    
+    <p>To develop for Android you need to get an IDE for Android. Android Studio is arguably the best Android IDE since it was made by the creators of Android. This tutorial will be using Android Studio so it is highly recommended you get Android Studio.</p>
+    <p>Before installing Android Studio on Mac OS X&#44; make sure that your computer has the recommended versions of the operating system and of Java Developer Kit (JDK). You can check your Mac&#39;s operating system by clicking the Apple Menu and choosing About This Mac&#58;
+    </p>
+    <a href="images/installing/InstallingMac1.png" class="zoomple"><img src="images/installing/InstallingMac1.png" alt="Mac Version" width="400px"></a>
+    
+    <p>You need Version 10.8.5 or higher&#58;</p>
+    <a href="images/installing/InstallingMac2.png" class="zoomple"><img src="images/installing/InstallingMac2.png" alt="Mac Version" width="400px"></a>
+    
+    <p>To check if you have JDK installed and it&#39;s version go to Terminal and type
+java &#45;version&#58;</p>
+    <a href="images/installing/InstallingMac3.png" class="zoomple"><img src="images/installing/InstallingMac3.png" alt="Mac Version" width="400px"></a>
+    
+    <p>We recommend using the most recent version&#44; JDK 8&#58;</p>
+    <a href="images/installing/InstallingMac4.png" class="zoomple"><img src="images/installing/InstallingMac4.png" alt="Mac Version" width="400px"></a>
+    
+    <section id="mJDK">
+    <h3 class="scrollHeader">Installing the Java Developer Kit (JDK)</h3>
+    
+    <p>In order to develop Android apps, you will need to install the JDK. This is more than the Java Runtime, which might already be installed on your computer. If you need to install JDK or update to the most recent version, go to your web browser and navigate to the web page at <a href="http://www.oracle.com/technetwork/java/index.html" title="Oracle">http://www.oracle.com/technetwork/java/index.html</a>. From this page&#44; click the Java SE link under Top Downloads&#58;</p>
+    <a href="images/installing/InstallingMac5.png" class="zoomple"><img src="images/installing/InstallingMac5.png" alt="Mac Version" width="700px"></a>
+    
+    <p>Then click the download link under JDK&#58;</p>
+    <a href="images/installing/InstallingMac6.png" class="zoomple"><img src="images/installing/InstallingMac6.png" alt="Mac Version" width="400px"></a>
+    
+    <p>After accepting the License Agreement&#44; you will be able to download the version of the JDK for Mac OS X 10.8 (Mountain Lion) or later.</p>
+    </section>
+    
+    <section id="mInstall">
+        <h3 class="scrollHeader">Downloading and installing Android Studio</h3>
+        <p>Once you have the right version of JDK&#44; you can install Android Studio. Go to your web browser and navigate to the web page at <a href="http://developer.android.com/sdk/index.html" title="Android Developer">http://developer.android.com/sdk/index.html</a>. Click the download link&#58;</p>
+        <a href="images/installing/mJDKImg8.png" class="zoomple"><img src="images/installing/mJDKImg8.png" alt="Mac Version" width="400px"></a>
+        
+        <p>The installer is downloaded as a &#42;.dmg file. To start the installation&#44; double&#45;click it to open it&#58;</p>
+        <a href="images/installing/mJDKImg9.png" class="zoomple"><img src="images/installing/mJDKImg9.png" alt="Installating" width="600px"></a>
+        
+        <p>Then&#44; drag&#45;and&#45;drop Android Studio into the Applications folder&#58;</p>
+        <a href="images/installing/mJDKImg10.png" class="zoomple"><img src="images/installing/mJDKImg10.png" alt="Moving Android Studio into the Applications Folder" width="600px"></a>
+        
+        <p>Once the file has been copied over&#44; double&#45;click on Applications. Double&#45;click Android Studio.</p>
+        
+        <p>When it is complete&#44; the software is installed and ready to use&#44;However, you will probably want to install extra packages to make Android Studio complete. When you open Android Studio, you should be presented with the &#34;Welcome to Android Studio&#34; window. Click Configure:</p>
+        <a href="images/installing/InstallingMac10.png" class="zoomple"><img src="images/installing/InstallingMac10.png" alt="Win Version" width="600px"></a>
+        <p>Click SDK Manager:</p>
+        <a href="images/installing/InstallingMac11.png" class="zoomple"><img src="images/installing/InstallingMac11.png" alt="Mac Version" width="600px"></a>
+        <p>Check the packages you want to install and click &#34;Install packages...&#34; button:</p> 
+        <a href="images/installing/InstallingMac12.png" class="zoomple"><img src="images/installing/InstallingMac12.png" alt="Mac Version" width="600px"></a>
+        <p>It is recommended that you download:</p>
+        <ul>
+            <li>Android SDK Tools</li>
+            <li>Android SDK Platform Tools</li>
+            <li>Android SDK Build Tools</li>
+            <li>A System Image for the emulator, (like ARM EABI v7a System Image)</li>
+        </ul>
+        <p>The installation will probably take a few minutes. Once the installation is complete, you can use Android Studio.</p>
+        <p>You can find the latest system requirements for Android Studio at the <a         href="http://developer.android.com/sdk/index.html#Requirements" title="Requirements" target="_blank">http://developer.android.com/sdk/index.html#Requirements</a></p>
+    
+        <p>To read more about installing Android Studio refer to the <a href="http://developer.android.com/sdk/installing/index.html?pkg=studio" title="Installing Android Studio" target="_blank">http://developer.android.com/sdk/installing/index.html?pkg=studio</a></p>
+    </section>
+    <p><a href="#installingOnMac" title="Back to top">Back to top</a><br>&nbsp;</p>    
+</div>
+<!--******************************End of Tabs*****************************-->
+
+                                </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </main>
+        <footer role="contentinfo" class="footerInfo">
+            <p>&copy; <a href="https://developer.android.com/about/index.html" title="Android API" target="_blank">Android API</a>
+        </footer>
+    </body>
+    
+</html>

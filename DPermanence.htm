@@ -1,0 +1,470 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Android Tutorial</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="_scripts/tabs.js"></script>
+        <script src="_scripts/jquery-1.3.2.min.js"></script>
+        <script src="_scripts/zoomple-1.4.js"></script>
+        <script src="_scripts/zoomfun.js"></script>
+    </head>
+    <body class="background">
+        <header role="banner" class="header">
+            <div class="logo">
+                <div class="topLogo">Android Tutorial</div>
+                <div class="botLogo">Junior Capstone(Crazy 88s)</div>
+            </div>
+            <div class="navMenu">
+                <ul class="navMenuUl">
+                    <li><a href="home.htm">HOME</a></li>
+                    <li><a class="active" href="#">TUTORIAL</a></li>
+                </ul>
+            </div>
+        </header>
+        <main role="main">
+            <article role="article" class="mainContent">
+                <div class="sidebar">
+                    <div class="sideNav">
+                        <div class="sideHeader">Table of Content</div>
+                        <ol class="navDropDown" type="1">
+                            <li><a href="Intro.htm">Overview</a>
+                                <ul>
+                                    <li><a href="Intro.htm">What is Android&#63;</a></li>
+                                    <li><a href="Intro.htm">GIT MAD</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Installing.htm">Installing Android Studio</a></li>
+                            <li><a href="SettingUp.htm">Setting Up Android Studio</a></li>
+                            <li><a href="Emulator.htm">Setting up Emulator</a></li>
+                            <li><a href="Genymotion.htm">Genymotion</a></li>
+                            <li><a href="Activities.htm">Activities and Intents</a></li>
+                            <li><a href="UserInterface.htm">Android UI&nbsp;&nbsp;&nbsp;</a>
+                                <ul>
+                                    <li><a href="UserInterface.htm">Layouts<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">Creating new Layout</a></li>
+                                            <li><a href="UserInterface.htm">Relative Layout</a></li>
+                                            <li><a href="UserInterface.htm">Linear Layout</a></li>
+                                            <li><a href="UserInterface.htm">Frame Layout</a></li>
+                                            <li><a href="UserInterface.htm">Grid Layout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Text Views</a></li>
+                                    <li><a href="UserInterface.htm">Text Fields</a></li>
+                                    <li><a href="UserInterface.htm">Buttons</a></li>
+                                    <li><a href="UserInterface.htm">Spinner</a></li>
+                                    <li><a href="UserInterface.htm">Containers<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">List View</a></li>
+                                            <li><a href="UserInterface.htm">Grid View</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Date and Time<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">Date Picker</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Import Images</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="DPermanence.htm">Data Permanence</a>
+                                <ul>
+                                    <li><a href="DPermanence.htm">Getting Stated</a></li>
+                                    <li><a href="DPermanence.htm">Inserting Data</a></li>
+                                    <li><a href="DPermanence.htm">Selecting Data</a></li>
+                                    <li><a href="DPermanence.htm">Updating Data</a></li>
+                                    <li><a href="DPermanence.htm">Deleting Data</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="textContent">
+                    <h1 class="textHeading">Data Permanence</h1>
+                    <section class="text">
+                        <div id="tabContainer">
+                            <div id="tabs">
+                                <ul>
+                                    <li id="tab1"><h2><a href="#introduction">Getting Started</a></h2></li>
+                                    <li id="tab2"><h2><a href="#insert">Inserting Data</a></h2></li>
+                                    <li id="tab3"><h2><a href="#select">Selecting Data</a></h2></li>
+                                    <li id="tab4"><h2><a href="#update">Updating Data</a></h2></li>
+                                    <li id="tab5"><h2><a href="#delete">Deleting Data</a></h2></li>
+                                </ul>
+                            </div>
+                            <div id="containers" class="scrollBar">
+                                <div id="introduction">
+                                    <h2 id="getting">Data Permanence: Getting Started</h2>
+                                    <nav role="navigation">
+                                        <ul>
+                                            <li><a href="#gettingStarted">Getting Started in SQLite</a></li>
+                                            <li><a href="#settingDatabaseHandler">Setting up Your DatabaseHandler Class</a></li>
+                                        </ul>
+                                    </nav>
+                                    
+                                                                <p>
+                                    In order to create an SQLite Database for your Android application you should know some of the basics of SQL. 
+                                    If you already understand how SQL works you can skip down to how to implement it in a Java Android environment. 
+                                    Otherwise&#44; I’d recommend going through and learning some basics about SQL.
+                                                                 </p>
+                                    <p> We are also providing a DatabaseHandler.java file that contains a sample DatabaseHandler class for SQLite. 
+                                    <a href="_resources/DatabaseHandler.java" title="Download source code" download="DatabaseHandler.java">Download</a></p>
+                                    <h3 id="gettingStarted">Getting Started in SQLite</h3>
+                                     <p>
+                                    In order to create an SQLite Database for your Android application you should know some of the basics of SQL. 
+                                    If you already understand how SQL works you can skip down to how to implement it in a Java Android environment. 
+                                    Otherwise&#44; I’d recommend going through and learning some basics about SQL.
+                                                                 </p>
+                                    <h3 id="gettingStarted">Getting Started in SQLite</h3>
+                                    <p>If you are unsure about SQL some good resources are&#58;</p>
+                                    <p>
+                                        A good resources is w3schools guide on SQL<br>
+                                        <a href="http://www.w3schools.com/sql/" title="SQLite" target="_blank">http://www.w3schools.com/sql/</a>    
+                                        <br><br>
+                                        The Android SQLite Database API<br>
+                                        <a href="http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html" title="SQLite Database" target="_blank">http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html</a>        
+                                    </p>
+                                    <p>
+                                       For this tutorial on SQLite in Android I often use example code for a fictional database that has one table&#58; USERS with column_ids&#58; &#40;int id&#44; String username&#44; String password&#44; long balance&#41;.
+                                    </p>
+                                    <p>
+                                    To create an SQLite database we need to create a class that extends <b>SQLiteOpenHelper</b> <br>You can just create one DatabaseHandler class that extends SQLiteOpenHelper and put the database related queries in this one class. Then whenever you need to access your Database simply create an instance of a DatabaseHandler to gain access to the Database and its methods.
+</p>
+                                    <p>
+                                    Go ahead and create a new java class called DatabaseHandler and have it extend OpenSQLiteHelper
+                                    </p>
+                                    <p class="blockView">public class DatabaseHandler extends SQLiteOpenHelper</p>
+                                    <aside role=complementary>
+                                        <h3 id="settingDatabaseHandler">Setting up Your DatabaseHandler Class</h3>
+                                        <ul>
+                                            <li><a href="#imports">Imports</a></li>
+                                            <li><a href="#variables">Variable Declarations</a></li>
+                                            <li><a href="#constructor">Constructor</a></li>
+                                            <li><a href="#onCreateAndOnUpdate">onCreate and onUpdate Methods</a></li>
+                                        </ul>
+                                        
+<!-- IMPORTS SUBSECTION -->                                             
+                                        
+                                        <aside>                                        
+                                            <h4 id="imports">Imports</h4>
+                                            <p>
+                                            There are a few classes and libraries we need to import some are required and others are recommended.
+                                            </p>
+                                            <p class="blockView">import android&#46;database&#46;sqlite&#46;SQLiteDatabase&#59;<br>import android&#46;database&#46;sqlite&#46;SQLiteOpenHelper&#59;</p>
+                                            <p>
+                                            You probably already imported the SQLiteOpenHelper since we are extending it. Also the SQLiteDatabase is required in order to have access to the database.
+                                            </p>
+                                            <p class="blockView">import android&#46;content&#46;ContentValues&#59;<br>import android&#46;database&#46;Cursor;<br>import android&#46;content&#46;Context&#59;</p>
+                                            <p>
+                                                ContentValues is a container class used by Android to help insert or modify data in the database&#44;</p>
+                                            <p>
+                                                Cursor allows us to enumerate the rows in a result set. If we are retrieving a lot of data from the database the Cursor will point to the position before the first row.
+                                            </p>
+                                            <p>
+                                                Context is the current state of the application/object. It lets newly created objects understand what has been going on in the application. Knowing the current state is important.
+                                            </p>
+                                            <p class="blockView">import java.util.List&#59;<br>import java.util.ArrayList&#59;</p>
+                                            <p>
+                                            This is technically optional&#44; but I like using them when I&#39;m manipulating multiple Objects such as Strings or other data objects.
+                                            </p>
+                                             <p class="blockView">import java.util.Log&#59;</p>
+                                            <p>
+                                            This is also optional&#44; but it is useful for debugging as it is basically a println for Android.<br>
+                                            Log API&#58; <a href="http://developer.android.com/reference/android/util/Log.html" title="Util Log" target="_blank">http://developer.android.com/reference/android/util/Log.html</a>
+                                                <br><br>Example of Log in Use&#58;
+                                                <p class="blockView">Log.d&#40;String tag&#44; String message&#41;&#59;</p>
+                                        </aside>
+                                        
+<!-- VARIABLES SUBSECTION -->    
+                                        
+                                        <aside>
+                                            <h4 id="variables">Variable Declarations</h4>
+                                            <p>There are several variables that you should make these are all private final variables and represent all of your table names and variables names. Lets get started!</p>
+                                            <p class="blockView">public class DatabaseHandler extends SQLiteOpenHelper &#123;<br><br>&#09;private final String dbname = “dbManager”&#59;<br>&#09;private final int dbVersion = 1&#59;</p>
+                                            <p>
+                                            dbName and dbVersion are required for the database. The dbName is only used in the Constructor. The dbVersion is a very important variable because whenever you increment this number&#44; the onUpdate method is called &#40;automatically&#41;. Make sure you know what your onUpdate method does before you increment the dbVersion number. This should really only be incremented when you make changes to the tables or column names.
+                                            </p>
+                                            <p>
+                                            Next we need to put in the names of our tables and column_id &#40;keys&#41;. &#40;If you do no know what I mean by table and column names please refer to an guide in SQL&#41;. In my example below I one table which I have named users.
+                                            </p>
+                                            <p>
+                                            The users table has four column_ids &#40;column names&#41; there are id&#44; username&#44; password&#44; and balance. 
+                                            Note the syntax of each of these variables&#44; these are fairly standard.<br><br>
+                                                TABLE_name for tables<br>
+                                                KEY_name for columns names&#44; keys&#44; or ids whichever you prefer<br>
+                                            </p>
+                                            <p>
+                                            The reason we make these is that if we ever want or need to change a name of one of our tables or keys&#44; we only need to change it once in this variable rather than everywhere we use it.
+                                            </p>
+                                             <p class="blockView">&#47;&#47;Table Strings<br>private final String TABLE_USERS = “users”&#59; <br><br>&#47;&#47;Column_ID Strings<br>private final String KEY_ID = “id”&#59; <br>private final String KEY_USERNAME = “username”&#59; <br>private final String KEY_PASSWORD = “password”&#59; <br>private final String KEY_BALANCE = “balance”&#59; </p>
+                                            <p>Next we declare the CREATE_TABLE_STRINGS. These strings are raw SQL Create Table statements. Look up SQL Create Table statements for proper syntax. 
+                                                 <p class="blockView">private static final String CREATE_USERS_TABLE = &#34;CREATE TABLE &#34;<br>&#43; TABLE_USERS &#43; &#34;&#40;&#34;<br>&#43; KEY_ID &#43; &#34; INTEGER PRIMARY KEY&#44;&#34;<br>&#43; KEY_USERNAME &#43; &#34; TEXT&#44;&#34;<br>&#43; KEY_PASSWORD &#43; &#34; TEXT" &#43;<br>&#43; KEY_BALANCE &#43; &#34; REAL&#34; &#43;  &#34;&#41;&#34;&#59; </p>
+                                                Here is a transalated plain example of my user table&#58;<br>
+                           &#34;CREATE TABLE users&#40;id INTEGER PRIMARY KEY&#44; username TEXT&#44; password TEXT&#44; balance REAL&#41;&#34;
+                                                </p>
+                                            <p>
+                                                The INTEGER&#44; TEXT&#44; and REAL are all datatypes in SQLite.<br>
+                                                For a complete list of SQLite datatypes that you can use go to&#58;<br>
+                                                <a href="https://www.sqlite.org/datatype3.html" title="Data Type" target="_blank">https://www.sqlite.org/datatype3.html</a>
+                                            </p>
+                                            <p>
+                                            id is the row number of the values in the table. This number is automatically generated when data is inserted into the database&#44; username&#44; password&#44; and balance.
+                                            </p> 
+                                        </aside>   
+    
+ <!-- CONSTRUCTOR SUBSECTION -->      
+                                    
+                                        <aside>
+                                            <h4 id="constructor">Constructor</h4>
+                                            <p>
+                                          The Constructor takes in the Context and calls the super Constructor &#40;remember we are extending SQLiteOpenHelper&#41;. An example of the Constructor&#58;
+                                            </p>
+                                            <p class="blockView">public DatabaseHandler&#40;Context context&#41; &#123;<br>&#09;super&#40;context&#44; dbName&#44; null&#44; dbVersion&#41;&#59;<br>&#125;</p>
+                                            <p>
+                                           Parameters&#58;<br>
+                                                Context context &#45; The context is basically the current state of an object or application.<br>
+                                                String dbName &#45; The database name a String &#40;we declared this in the variables section&#41;<br>
+                                                CursorFactory factory &#45; A CursorFactor is if you want to implement your own Cursor class to do more operations on the data result set. For most cases we can just set this to null and use the default SQLite Cursor.<br>
+                                                int dbVersion &#45; The current version of the database system &#40;we declared this in the variables section&#41;.
+                                            </p>
+                                            <p>
+                                            
+                                            When you are creating a DatabaseHandler in the Activity in which you need to access the database you would use the following code&#58;
+                                                <p class="blockView">DatabaseHandler dbHandler = new DatabaseHandler&#40;this&#41;&#59;</p>
+                                            this &#45; is the Context of the Activity.
+                                            </p>
+                                        </aside>
+                                
+ <!-- ON CREATE AND ON UPDATE SUBSECTION -->  
+                                
+                                        <aside>
+                                            <h4 id="onCreateAndOnUpdate">onCreate and onUpdate Methods</h4>
+                                            <p>
+                                            The onCreate and onUpdate methods are required methods &#40;abstract&#41; to implement since we are extending SQLiteOpenHelper. Both of these methods take in an SQLiteDatabase object. One of the methods for SQLiteDatabase is the execSQL&#40;String sql&#41; method.
+                                            </p>
+                                            <p>
+                                            Here is a brief rundown of the execSQL&#40;String sql&#41; method.<br>
+                                             <p class="blockView">public void execSQL&#40;String sql&#41;</p>   
+                                            Parameters&#58;<br>
+	                                           sql &#45; a single SQL Statement that is NOT a SELECT or any other SQL statement that returns data. This method has no means to return any data.<br>
+                                            Returns&#58; void
+                                            </p>
+                                            <h1>On Create Method</h1>
+                                            <p>
+                                            As its name implies&#44; the onCreate method is called whenever the database is created. This method handles the CREATE TABLE and &#40;if you want&#41; populating these tables with data using INSERT.
+                                            The following is an example of an onCreate Method&#58;<br>
+                                            <p class="blockView">public void onCreate&#40;SQLiteDatabase db&#41; &#123;<br>&#09;db.execSQL&#40;CREATE_USERS_TABLE&#41;&#59;<br>&#125;</p>
+                                            Notice we use the CREATE_USERS_TABLE string that we created in the Variables section of this tutorial. This is a CREATE TABLE SQL statement. We are telling the SQLiteDatabase to execute this SQL statement on the database.<br> If you skipped that section the String would look like&#58; 
+                                            <p class="blockView">String sql = &#34;CREATE TABLE users&#40;id INTEGER PRIMARY KEY&#44; username TEXT&#44; password TEXT&#44; balance REAL&#41;&#34;&#59;</p>
+                                            Remember syntax is important in this String since this is an SQL statement.
+                                            </p>
+                            
+                                            <h1>On Update Method</h1>
+                                            <p>
+                                            As its name implies&#44; the onUpdate method is called whenever the database version is incremented. So whenever you increment the dbVersion variable &#40;we made in the variables section of this tutorial&#41; this method will be called.<br>
+                                                The following is an example of the onUpdate method&#58;
+                                                <p class="blockView">public void onUpdate&#40;SQLiteDatabase db&#41; &#123;<br>&#09;&#47;&#47;This example drops the table user &#40;deleting all data&#41;<br>&#09;db.execSQL&#40;&#34;DROP TABLE IF EXISTS &#34; &#43; TABLE_USERS&#41;&#59;<br>&#09;&#47;&#47;It then recreates the database using the onCreate method<br>&#09;onCreate&#40;db&#41;&#59;<br>&#125;</p>
+                                            This particular onUpdate executes the SQL statement&#58; DROP TABLE IF EXISTS users<br>
+                                            This statement will drop the users table&#44; deleting all of the data that was in the table. It then rebuilds the database using the onCreate method.
+                                            </p>
+                                        </aside>
+                                    <p><a href="#introduction" title="Back to top">Back to top</a><br>&nbsp;</p>          
+                                </div>
+                      
+                                    
+ <!-- INSERT SECTION -->      
+                
+                                    
+                                <div id="insert">
+                                    <h2 id="inserting">Data Permanence: Inserting Data</h2>
+                                    <p>
+                                    This section is written under the assumption that you read and have implemented the Getting Started subsection. These methods are designed to go in the DatabaseHandler class that is set up in the Getting Started section.
+                                    </p>
+                                    <h3>Inserting Data into your SQLite Database</h3>
+                                    <p>
+                                        To insert data into your database we use the convenience method insert provided by Android&#58;
+                                    </p>
+                                    <p class="blockView">public long insert&#40;String table&#44; String nullColumnHack&#44; ContentValues values&#41;&#59;</p>
+                                    <p>
+                                    <b>Parameters</b><br>
+                                    table &#45; the table to insert the row into
+                                    </p>
+                                    <p>
+                                    nullColumnHack &#45; optional&#59; may be null. SQL doesn’t allow inserting a completely empty row without naming at least one column name. It your provided values is empty&#44; no column names are known and an empty row can’t be inserted. If not set to null the nullColumnHack parameter provides the name of the nullable column name to explicitly insert a NULL into in the case where your values is empty.                                        </p>
+                                    <p>
+                                    values &#45; this map contains the initial column values for the row. The keys should be the column names and the values the column values.
+                                    </p>
+                                    <p>
+                                    <b>Returns</b> &#45; the row ID of the newly inserted row&#44; or &#45;1 if an error occured.
+                                    </p>
+                                    <p>
+                                    The following code shows an example of using this code to insert a date into the table user&#40;INTEGER id&#44; TEXT username&#44; TEXT password&#44; REAL balance&#41;&#58;
+                                        <p class="blockView">public long addUser&#40;String username&#44; String password&#44; long balance&#41; &#123;<br><br>&#09;&#47;&#47;We open the database for write access.<br>&#09;SQLiteDatabase db = this.getWritableDatabase&#40;&#41;&#59;<br><br>&#09;&#47;&#47;Content Values stores the values that we are putting into the database. This is a container class for the database.<br>&#09;ContentValues values = new ContentValues&#40;&#41;&#59;<br><br>&#09;&#47;&#47;Add our values to the ContentValues values using the put&#40;String columnId&#44; value&#41; method.<br>&#09;values.put&#40;KEY_USERNAME&#44; username&#41;&#59;<br>&#09;values.put&#40;KEY_PASSWORD&#44; password&#41;&#59;<br>&#09;values.put&#40;KEY_BALANCE&#44; balance&#41;&#59;<br><br>&#09;&#47;&#47;Insert into the database using the insert method &#40;Note it returns the userID or row number&#41;<br>long userId = db.insert&#40;TABLE_USERS&#44; null&#44; values&#41;&#59;<br><br>&#09;&#47;&#47;It is generally good practice to close the database connection.<br>&#09;db.close&#40;&#41;&#59;<br><br>&#09;&#47;&#47;Return the userId &#40;row id&#41;<br>&#09;return userId;<br>&#125;</p>
+                                    </p>
+                                    <p><a href="#insert" title="Back to top">Back to top</a><br>&nbsp;</p>
+                                </div>
+        
+            
+<!-- SELECT SECTION -->        
+            
+                         
+                                <div id="select">
+                                    <h2 id="selecting">Data Permanence: Selecting Data</h2
+                                        <nav role="navigation">
+                                            <ul>
+                                                <li><a href="#fromDatabase">Selecting Data from your Database</a></li>
+                                                <li><a href="#alternativeMethod">Alternative Method to Select Data</a></li>
+                                            </ul>
+                                        </nav>
+                                    <p>This section is written under the assumption that you read and have implemented the Getting Started subsection. These methods are designed to go in the DatabaseHandler class that is set up in the Getting Started section.</p>
+                                    <h3 id="fromDatabase">Selecting Data from your Database</h3>
+                                    <p>
+                                        You should probably understand how SELECT SQL statements work before trying to implement it in Android. Please refer to the SQL syntax guide of your choosing.
+                                        To select data from the database we use the query method provided by Android&#58;
+                                        <p class="blockView">public Cursor query&#40;String table&#44; String[] columns&#44; String selection&#44; String[] selectionArgs&#44; String groupBy&#44; String having&#44; String orderBy&#44; String limit&#41;&#59;</p>                                    
+                                    <b>Parameters</b><br>
+                                    table &#45; The table name to compile the query against.
+                                    </p>
+                                    <p>
+                                    columns &#45; A list of which columns to return. Passing null will return all columns&#44; which is discouraged to prevent reading data from storage that isn&#39;t going to be used.
+                                    </p>
+                                    <p>
+                                    selection &#45; A filter declaring which rows to return&#44; formatted as an SQL WHERE clause &#40;excluding the WHERE itself&#41;. Passing null will return all rows for the given table.
+                                    </p>
+                                    <p>
+                                    selectionArgs &#45; You may include ?s in selection&#44; which will be replaced by the values from selectionArgs&#44; in order that they appear in the selection. The values will be bound as Strings.
+                                    </p>
+                                    <p>
+                                    groupBy &#45; A filter declaring how to group rows&#44; formatted as an SQL GROUP BY clause &#40;excluding the GROUP BY itself&#41;. Passing null will cause the rows to not be grouped.
+having A filter declare which row groups to include in the cursor&#44; if row grouping is being used&#44; formatted as an SQL HAVING clause &#40;excluding the HAVING itself&#41;. Passing null will cause all row groups to be included&#44; and is required when row grouping is not being used.
+                                    </p>
+                                    <p>
+                                    orderBy &#45; How to order the rows&#44; formatted as an SQL ORDER BY clause &#40;excluding the ORDER BY itself&#41;. Passing null will use the default sort order&#44; which may be unordered.
+                                    </p>
+                                    <p>
+                                    limit &#45; Limits the number of rows returned by the query&#44; formatted as LIMIT clause. Passing null denotes no LIMIT clause.
+                                    </p>
+                                    <p>
+                                    <b>Returns</b> &#45; A Cursor object&#44; which is positioned before the first entry. Note that Cursors are not synchronized.
+                                    </p>
+                                    <p>
+                                    Note&#58; many of the last parameters may be left as null depending on the situation.
+                                    </p>
+                                    <p>
+                                    The following code is an example that gets all users from the user table that have the username in the parameter&#58;
+                                        <p class="blockView">public List<Users> getUsersByUsername&#40;String username&#41; &#123;<br><br>&#09;&#47;&#47;List to hold all returned Users &#40;uses a User data object&#41;<br>&#09;List<Users> userList = new ArrayList<Users>&#40;&#41;&#59;<br><br>&#09;&#47;&#47;Get readable database<br>&#09;SQLiteDatabase db = this.getReadableDatabase&#40;&#41;&#59;<br><br>&#09;&#47;&#47;Set up our parameters for the query method<br>&#09;String[] columns = new String[] &#123;KEY_ID&#44; KEY_USERNAME&#44; KEY_PASSWORD&#44; KEY_BALANCE&#125;&#59;<br>&#09;String selection = KEY_USERNAME &#43; &#34;=?&#34;&#59;<br>&#09;String[] selectArgs = new String[] &#123;String.valueOf&#40;username&#41; &#125;&#59;<br><br>&#09;Cursor cursor = db.query&#40;TABLE_USERS&#44; columns&#44; selection&#44; selectArgs&#44; null&#44; null&#44; null&#41;&#59;<br><br>&#09;if &#40;cursor.moveToFirst&#40;&#41;&#41; &#123;<br>&#09;&#09;do &#123;<br>&#09;&#09;&#09;&#47;&#47;Extract the data from the Cursor into a User data object<br>&#09;&#09;&#09;User user = new User&#40;Integer.parseInt&#40;cursor.getString&#40;0&#41;&#41;&#44; cursor.getString&#40;1&#41;&#44; cursor.getString&#40;2&#41;&#44; cursor.getLong&#40;3&#41;&#41;&#59;<br>&#09;&#09;&#09;userList.add&#40;user&#41;&#59;<br>&#09;&#09;&#47;&#47;go to the next data set<br>&#09;&#09;&#125; while &#40;cursor.moveToNext&#40;&#41;&#41;&#59;<br>&#09;&#125;<br><br>&#09;&#47;&#47;close the connection and return the userList<br>&#09;db.close&#40;&#41;&#59;<br>&#09;return userList;<br>&#125;</p>
+                                    </p>
+                                     <p>
+                                         <p>
+                                       This method takes in a String username and returns a List of Users. The User class is a data object container for the row values in the User table &#40;int id&#44; String username&#44; String password&#44; long balance&#41;.</p>
+                                      <p>  We leave the last three parameters in the query method null &#40;groupBy&#44; orderBy&#44; limit&#41;.</p>
+                                        Note&#58; There are other query methods that take in different parameters&#44; but this is the simplest.
+                                       <p> The if statement&#58; if&#40;cursor.moveToFirst&#40;&#41;&#41; checks to see if there are any values in the result set. The default Cursor always starts at the location before the first element in the result set. So if the cursor cannot move to first then there are no elements and we return an empty list</p>
+                                      <p>  Otherwise&#44; we extract the data into a User data object container using&#58; cursor.getDataType&#40;#&#41;&#59; &#40;Where the DataType is the datatype of that value and the # is the column number&#41;. We add each of these to a list and then move to the next element in the result set. Until we are out of elements</p>
+                                    </p>
+                                    <h3 id="alternativeMethod">Alternative Method to Select Data</h3>
+                                    <p>
+                                    It is generally recommended that you use the one of the query methods for SELECT statements&#44; but you could also use the method rawQuery API&#58; <p class="blockView">public Cursor rawQuery&#40;String sql&#44; String[] selectionArgs&#41;</p> 
+                                    <b>Parameters</b><br>
+                                    sql &#45; the SQL query. The SQL string must not be &#59; terminated
+                                    </p>
+                                    <p>
+                                    selectionArgs &#45; You may include ?s in where clause in the query&#44; which will be replaced by the values from selectionArgs. The values will be bound as Strings.
+                                    </p>
+                                    <p><b>Returns</b> &#45; A Cursor object&#44; which is positioned before the first entry. Note that Cursors are not synchronized.</p>                   <p>
+                                    Example of use&#58;<br>
+                                    Instead of using the db.query method you could create a String statement that is a raw SQL statement. For example we make the String sql = SELECT * FROM users WHERE username = ‘username’&#58;
+        <p class="blockView">String selectQuery = &#34;SELECT * FROM &#34; &#43; TABLE_USERS &#43; &#34; WHERE &#34; &#43; KEY_USERNAME &#43; &#34; = &#39;&#34; &#43; username &#43; &#34;&#39;&#34;&#59;</p> 
+                                    Since this is a raw SQL query getting the correct syntax is important. Make sure to look up SELECT statements to ensure you have the correct syntax.
+                                    </p>
+                                    <p>
+                                    Then instead of db.query you can use the db.rawQuery method. <p class="blockView">Cursor cursor = db.rawQuery&#40;selectQuery&#44; null&#41;&#59;</p> 
+                                    </p>
+                                <p><a href="#select" title="Back to top">Back to top</a><br>&nbsp;</p>
+                                </div>
+                                
+                                
+<!-- UPDATE SECTION -->                               
+                                
+                                <div id="update">
+                                    <h2 id="updating">Data Permanence: Updating Data</h2
+                                        <nav role="navigation">
+                                            <ul>
+                                                <li><a href="#updatefromDatabase">Updating Data in your Database</a></li>
+                                                <li><a href="#updatealternativeMethod">Alternative Method to Update Data</a></li>
+                                            </ul>
+                                        </nav>
+                                    <p>This section is written under the assumption that you read and have implemented the Getting Started subsection. These methods are designed to go in the DatabaseHandler class that is set up in the Getting Started section.</p>
+                                    <h3 id="updatefromDatabase">Updating Data in your Database</h3>
+                                    <p>To update data we use the convenience method update&#58;</p>
+                                    <p class="blockView">public int update &#40;String table&#44; ContentValues values&#44; String whereClause&#44; String[] whereArgs&#41;</p> 
+                                   <p><b>Parameters</b><br>
+                                    table &#45; the table to update in.
+                                       </p> 
+                                     <p>values &#45; a map from column names to new column values. null is a valid value that will be translated to NULL.</p> <p> whereClause &#45; the optional WHERE clause to apply when updating. Passing null will update all rows.</p>
+                                    <p>whereArgs &#45; You may include ?s in the where clause&#44; which will be replaced by the values from whereArgs. The values will be bound as Strings</p>
+                                    <p><b>Returns</b> &#45; the number of rows affected.</p>
+                                    <p class="blockView">public int updateUserBalance&#40;String username&#44; long newBalance&#41; &#123;<br><br>&#09;&#47;&#47;Get a writable database<br>&#09;SQLiteDatabase db = this.getWritableDatabase&#40;&#41;&#59;<br><br>&#09;&#47;&#47;Put the new balance into the ContentValues values for updating<br>&#09;ContentValues values = new ContentValues&#40;&#41;&#59;<br>&#09;values.put&#40;KEY_BALANCE&#44; newBalance&#41;&#59;<br>&#09;String whereClause = KEY_USERNAME &#43; “=” &#43; username;<br><br>&#09;&#47;&#47;Note&#58; It returns the number of affected rows by the operation<br>&#09;int affectedRows = db.update&#40;TABLE_USERS&#44; values&#44; whereClause&#44; null&#41;&#59;<br><br>&#09;&#47;&#47;Close our database connection<br>&#09;db.close&#40;&#41;&#59;<br>&#09;return affectedRows;<br>&#125;</p> 
+                                    <p>
+                                    We put the value that we wish to update with in ContentValue values&#44; which is a container that the SQLite database can read from. We create the WHERE clause of the UPDATE statement.
+                                        <p>
+                                    In SQL this statement would look like&#58; UPDATE username SET balance = newBalance WHERE username = username
+                                    </p>
+                                    </p>
+                                    <h3 id="updatealternativeMethod">Alternative Method to Update Data</h3>
+                                    <p>
+                                        It is recommended that you use the update method&#44; but you can also use the execSQL&#40;String sql&#41; method using a SQL statement as a string.<br>
+                                        <p class="blockView">public void execSQL&#40;String sql&#41;</p> 
+                                        <b>Parameters</b><br>
+                                            	sql &#45; a single SQL Statement that is NOT a SELECT or any other SQL statement that returns data. This method has no means to return any data.
+                                    </p>
+                                    <p>Example&#58;<br>
+                                        Similar to above code except instead of using the db.update method you can use execSQL&#40;String sql&#41; with a raw sql statement.    
+                                         <p class="blockView">String updateQuery = &#34;UPDATE &#34; &#43; TABLE_USERS &#43; &#34; SET &#34; &#43; KEY_BALANCE &#43; &#34; = &#39;&#34; &#43; newBalance &#43; &#34;&#39; WHERE &#34; &#43; KEY_USERNAME &#43; &#34; = &#39;&#34; &#43; username &#43; &#34;&#39;&#34;&#59;<br>db.execSQL&#40;updateQuery&#41;&#59;</p> 
+                                    </p>
+                                    <p><a href="#update" title="Back to top">Back to top</a><br>&nbsp;</p>
+                                </div>
+                                
+                                
+<!-- DELETE SECTION -->                                
+                                
+                                
+                                <div id="delete">
+                                    <h2 id="deleting">Data Permanence: Deleting Data</h2
+                                    <p>This section is written under the assumption that you read and have implemented the Getting Started subsection. These methods are designed to go in the DatabaseHandler class that is set up in the Getting Started section.</p>
+                                    <h3>Deleting Data from your Database</h3>
+                                    <p>
+                                    To delete data we use the convenience method delete provided by Android&#58; <p class="blockView">public int delete&#40;String table&#44; String whereClause&#44; String[] whereArgs&#41;</p> 
+                                    <b>Parameters</b><br>
+                                    table &#45; the table to delete from
+                                    </p>
+                                    <p>
+                                    whereClause &#45; the optional WHERE clause to apply when deleting
+                                    </p>
+                                    <p>
+                                    whereArgs &#45; You may include ?s in the where clause&#44; which will be replace by the values from where Args. The values will be bound as Strings.
+                                    </p>
+                                    <p><b>Returns</b> &#45; the number of rows affected if a whereClause is passed in&#44; 0 otherwise. To remove all rows and get a count pass 1 as the whereClause.</p>
+                                    <p>
+                                    Remember to be very carefuly using this method as it will completely remove the data from the database.
+                                    </p>
+                                    <p>
+                                    The following code deletes all users in the database with that share the inputted username. 
+<p class="blockView">public int deleteUser&#40;String username&#41; &#123;<br><br>&#09;&#47;&#47;Get a writable database<br>&#09;SQLiteDatabase db = this.getWritableDatabase&#40;&#41;&#59;<br><br>&#09;&#47;&#47;whereClause for our delete method<br>&#09;String whereClause = KEY_USERNAME &#43; “=” &#43; username;<br><br>&#09;&#47;&#47;Note&#58; It returns the number of affected rows by the operation<br>&#09;int affectedRows = db.delete&#40;TABLE_USERS&#44; whereClause&#44; null&#41;&#59;<br><br>&#09;&#47;&#47;Close our database connection<br>&#09;db.close&#40;&#41;&#59;<br>&#09;return affectedRows;<br>&#125;</p>
+                                    </p>
+                                <p><a href="#delete" title="Back to top">Back to top</a><br>&nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </article>
+        </main>
+        <footer role="contentinfo" class="footerInfo">
+            <p>&copy; <a href="https://developer.android.com/about/index.html" title="Android API" target="_blank">Android API</a>
+        </footer>
+    </body>
+    
+</html>

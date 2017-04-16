@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Android Tutorial</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="_scripts/tabs.js"></script>
+        <script src="_scripts/jquery-1.3.2.min.js"></script>
+        <script src="_scripts/zoomple-1.4.js"></script>
+        <script src="_scripts/zoomfun.js"></script>
+    </head>
+    <body class="background">
+        <header role="banner" class="header">
+            <div class="logo">
+                <div class="topLogo">Android Tutorial</div>
+                <div class="botLogo">Junior Capstone(Crazy 88s)</div>
+            </div>
+            <div class="navMenu">
+                <ul class="navMenuUl">
+                    <li><a href="home.htm">HOME</a></li>
+                    <li><a class="active" href="#">TUTORIAL</a></li>
+                </ul>
+            </div>
+        </header>
+        <main role="main">
+            <article role="article" class="mainContent">
+                <div class="sidebar">
+                    <div class="sideNav">
+                        <div class="sideHeader">Table of Content</div>
+                        <ol class="navDropDown" type="1">
+                            <li><a href="Intro.htm">Overview</a>
+                                <ul>
+                                    <li><a href="Intro.htm">What is Android&#63;</a></li>
+                                    <li><a href="Intro.htm">GIT MAD</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Installing.htm">Installing Android Studio</a></li>
+                            <li><a href="SettingUp.htm">Setting Up Android Studio</a></li>
+                            <li><a href="Emulator.htm">Setting up Emulator</a></li>
+                            <li><a href="Genymotion.htm">Genymotion</a></li>
+                            <li><a href="Activities.htm">Activities and Intents</a></li>
+                            <li><a href="UserInterface.htm">Android UI&nbsp;&nbsp;&nbsp;</a>
+                                <ul>
+                                    <li><a href="UserInterface.htm">Layouts<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">Creating new Layout</a></li>
+                                            <li><a href="UserInterface.htm">Relative Layout</a></li>
+                                            <li><a href="UserInterface.htm">Linear Layout</a></li>
+                                            <li><a href="UserInterface.htm">Frame Layout</a></li>
+                                            <li><a href="UserInterface.htm">Grid Layout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Text Views</a></li>
+                                    <li><a href="UserInterface.htm">Text Fields</a></li>
+                                    <li><a href="UserInterface.htm">Buttons</a></li>
+                                    <li><a href="UserInterface.htm">Spinner</a></li>
+                                    <li><a href="UserInterface.htm">Containers<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">List View</a></li>
+                                            <li><a href="UserInterface.htm">Grid View</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Date and Time<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">Date Picker</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Import Images</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="DPermanence.htm">Data Permanence</a>
+                                <ul>
+                                    <li><a href="DPermanence.htm">Getting Stated</a></li>
+                                    <li><a href="DPermanence.htm">Inserting Data</a></li>
+                                    <li><a href="DPermanence.htm">Selecting Data</a></li>
+                                    <li><a href="DPermanence.htm">Updating Data</a></li>
+                                    <li><a href="DPermanence.htm">Deleting Data</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="textContent">
+                    <h1 class="textHeading">Emulator</h1>
+                    <section class="text textBack">
+                        <div class="scrollBar">
+                            <section>
+                     <h2 id="emulator"> Setting up an Android Emulator</h2>
+                     <nav role="navigation">
+                         <ul>
+                             <li><a href="#emulator1">About Android Virtual Devices</a></li>
+                             <li><a href="#emulator2">Creating a New AVD</a></li>
+                             <li><a href="#emulator3">Starting the Emulator</a></li>
+                             <li><a href="#emulator4">Running the Application in the AVD</a></li>
+                         </ul>
+                     </nav>
+                     <p>In the course of developing Android applications in Android Studio it will be necessary to compile and run an application multiple times. An Android application may be tested by installing and running it either on a physical device or in an Android Virtual Device (AVD) emulator environment. Before an AVD can be used, it must first be created and configured to match the specification of a particular device model.</p>
+                     <h3 id="emulator1">About Android Virtual Devices</h3>
+                     <p>AVDs are essentially emulators that allow Android applications to be tested without the necessity to install the application on a physical Android based device. An AVD may be configured to emulate a variety of hardware features including options such as screen size, memory capacity and the presence or otherwise of features such as a camera, GPS navigation support or an accelerometer. As part of the standard Android Studio installation, a number of emulator templates are installed allowing AVDs to be configured for a range of different devices. Additional templates may be loaded or custom configurations created to match any physical Android device by specifying properties such as processor type, memory capacity and the size and pixel density of the screen.</p>
+                     <p>When launched, an AVD will appear as a window containing an emulated Android device environment:</p>
+                     <a href="images/Emulator/Emulator1.png" class="zoomple"><img src="images/Emulator/Emulator1.png" alt="Mac Version" width="300px"></a>
+                     <p>New AVDs are created and managed using the AVD Manager, which may be used either in command-line mode or with a more user-friendly graphical user interface.</p>
+                     <h3 id="emulator2">Creating a New AVD</h3>
+                     <p>In order to test the behavior of an application, it will be necessary to create an AVD for a specific Android device configuration.</p>
+                     <p>To create a new AVD:</p>
+                     <p>Launch the AVD Manager. This can be achieved from within the Android Studio environment. In the main window from the “Tools” menu select “Android” option. Select “AVD Manager”:</p>
+                     <a href="images/Emulator/Emulator2.png" class="zoomple"><img src="images/Emulator/Emulator2.png" alt="Mac Version" width="400px"></a>
+                     <p>Alternatively, you can press the “Android AVD” button in the tool bar:</p>
+                     <a href="images/Emulator/Emulator3.png" class="zoomple"><img src="images/Emulator/Emulator3.png" alt="Mac Version" width="300px"></a>
+                     <p>Once launched, you can begin the AVD creation process by clicking on the “Create a virtual device” button in order to invoke the Virtual Device Configuration dialog:</p>
+                     <a href="images/Emulator/Emulator4.png" class="zoomple"><img src="images/Emulator/Emulator4.png" alt="Mac Version" width="400px"></a> 
+                     <p>For the purpose of this example let us create a Nexus 4 compatible emulator. Within the dialog, from the “Category” panel, select the “Phone” option to display the list of available Android phone AVD templates. Select the “Nexus 4” device option. Click “Next”:</p>
+                     <a href="images/Emulator/Emulator5.png" class="zoomple"><img src="images/Emulator/Emulator5.png" alt="Mac Version" width="500px"></a>
+                     <p>On the System Image screen, select the latest version of Android (at time of writing this is Android 5.0.1, Lollipop API level 21) for the armeabi-v7a ABI. Click “Next” to proceed:</p>
+                     <a href="images/Emulator/Emulator6.png" class="zoomple"><img src="images/Emulator/Emulator6.png" alt="Mac Version" width="500px"></a>
+                     <p>Enter a descriptive name (for example Nexus 4) into the name field. Click “Finish” to create the AVD:</p>
+                     <a href="images/Emulator/Emulator7.png" class="zoomple"><img src="images/Emulator/Emulator7.png" alt="Mac Version" width="500px"></a>
+                     <p>With the AVD created, the "AVD Manager" may now be closed. If future modifications to the AVD are necessary, simply re-open the "AVD Manager", select the AVD from the list and click on the pencil icon in the "Actions" column of the device row:</p>
+                     <a href="images/Emulator/Emulator8.png" class="zoomple"><img src="images/Emulator/Emulator8.png" alt="Mac Version" width="300px"></a>
+                     <h3 id="emulator3">Starting the Emulator</h3>
+                     <p>To perform a test run of the newly created AVD emulator, simply select the emulator from the "AVD Manager" and click on the launch button (the green triangle in the "Actions" column) followed by Launch in the resulting Launch Options dialog:</p>
+                     <a href="images/Emulator/Emulator9.png" class="zoomple"><img src="images/Emulator/Emulator9.png" alt="Mac Version" width="300px"></a>
+                     <p>Aternatively, you can press the "Run app" button in the tool bar:</p>
+                    <a href="images/Emulator/Emulator10.png" class="zoomple"><img src="images/Emulator/Emulator10.png" alt="Mac Version" width="300px"></a>
+                    <p>The emulator will appear in a new window and, after a short period of time, the “android” logo will appear in the center of the screen:</p>
+                    <a href="images/Emulator/Emulator11.png" class="zoomple"><img src="images/Emulator/Emulator11.png" alt="Mac Version" width="300px"></a> 
+                    <p>The first time the emulator is run, it can take up to 10 minutes for the emulator to fully load and start. On subsequent invocations, this will typically reduce to a few minutes. In the event that the startup time on your system is considerable, do not hesitate to leave the emulator running. The system will detect that it is already running and attach to it when applications are launched, thereby saving considerable amounts of startup time.</p>
+                    <p>Another option when using the emulator is to enable the Snapshot option in the AVD settings screen. This option, which can only be used when the "Use Host GPU" option is disabled, enables the state of an AVD instance to be saved and reloaded next time it is launched. This can result in an emulator startup time of just a few seconds.</p>
+                    <p>To enable snapshots, select the emulator from the "AVD Manager" and click on pencil icon in the "Actions" column.</p>
+                    <a href="images/Emulator/Emulator8.png" class="zoomple"><img src="images/Emulator/Emulator8.png" alt="Mac Version" width="300px"></a>
+                    <p>In the “Virtual Device Configuration” window disable the “Use Host GPU” option and enable the “Store a snapshot for faster startup”. Click “Finish”:</p>
+                    <a href="images/Emulator/Emulator12.png" class="zoomple"><img src="images/Emulator/Emulator12.png" alt="Mac Version" width="350px"></a>
+                    <h3 id="emulator4">Running the Application in the AVD</h3>
+                    <p>With an AVD emulator configured, the earlier created Android applications now can be compiled and run. With the Android project loaded into Android Studio, simply click on the run button represented by a green triangle located in the Android Studio toolbar or use the "Shift+F10" keyboard shortcut:</p>
+                    <a href="images/Emulator/Emulator10.png" class="zoomple"><img src="images/Emulator/Emulator10.png" alt="Mac Version" width="300px"></a>
+                    <p>By default, Android Studio will respond to the run request by displaying the "Choose Device" dialog. This provides the option to execute the application on an AVD instance that is already running, or to launch a new AVD session specifically for this application. For the purpose of this example select earlier created Nexus4 in the dialog and click OK to install and run the application on the emulator:</p>
+                    <a href="images/Emulator/Emulator13.png" class="zoomple"><img src="images/Emulator/Emulator13.png" alt="Mac Version" width="400px"></a>
+                    <p>Once the application is installed and running, the user interface will appear within the emulator.</p>
+                    <p>To read more about setting up AVD's refer to the</p>  
+                    <a href="https://developer.android.com/tools/devices/index.html" title="Managing AVD's" target="_blank">https://developer.android.com/tools/devices/index.html</a></p>
+                     <p><a href="#emulator" title="Back to top">Back to top</a><br>&nbsp;</p>
+                    
+                    
+                     </section>   
+                </div>
+
+            </article>
+        </main>
+        <footer role="contentinfo" class="footerInfo">
+            <p>&copy; <a href="https://developer.android.com/about/index.html" title="Android API" target="_blank">Android API</a>
+        </footer>
+    </body>
+    
+</html>

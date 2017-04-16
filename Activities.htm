@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Android Tutorial</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="_scripts/tabs.js"></script>
+        <script src="_scripts/jquery-1.3.2.min.js"></script>
+        <script src="_scripts/zoomple-1.4.js"></script>
+        <script src="_scripts/zoomfun.js"></script>
+    </head>
+    <body class="background">
+        <header role="banner" class="header">
+            <div class="logo">
+                <div class="topLogo">Android Tutorial</div>
+                <div class="botLogo">Junior Capstone(Crazys 88)</div>
+            </div>
+            <div class="navMenu">
+                <ul class="navMenuUl">
+                    <li><a href="home.htm">HOME</a></li>
+                    <li><a class="active" href="#">TUTORIAL</a></li>
+                </ul>
+            </div>
+        </header>
+        <main role="main">
+            <article role="article" class="mainContent">
+                <div class="sidebar">
+                    <div class="sideNav">
+                        <div class="sideHeader">Table of Content</div>
+                        <ol class="navDropDown" type="1">
+                            <li><a href="Intro.htm">Overview</a>
+                                <ul>
+                                    <li><a href="Intro.htm">What is Android&#63;</a></li>
+                                    <li><a href="Intro.htm">GIT MAD</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Installing.htm">Installing Android Studio</a></li>
+                            <li><a href="SettingUp.htm">Setting Up Android Studio</a></li>
+                            <li><a href="Emulator.htm">Setting up Emulator</a></li>
+                            <li><a href="Genymotion.htm">Genymotion</a></li>
+                            <li><a href="Activities.htm">Activities and Intents</a></li>
+                            <li><a href="UserInterface.htm">Android UI&nbsp;&nbsp;&nbsp;</a>
+                                <ul>
+                                    <li><a href="UserInterface.htm">Layouts<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">Creating new Layout</a></li>
+                                            <li><a href="UserInterface.htm">Relative Layout</a></li>
+                                            <li><a href="UserInterface.htm">Linear Layout</a></li>
+                                            <li><a href="UserInterface.htm">Frame Layout</a></li>
+                                            <li><a href="UserInterface.htm">Grid Layout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Text Views</a></li>
+                                    <li><a href="UserInterface.htm">Text Fields</a></li>
+                                    <li><a href="UserInterface.htm">Buttons</a></li>
+                                    <li><a href="UserInterface.htm">Spinner</a></li>
+                                    <li><a href="UserInterface.htm">Containers<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">List View</a></li>
+                                            <li><a href="UserInterface.htm">Grid View</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Date and Time<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">Date Picker</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Import Images</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="DPermanence.htm">Data Permanence</a>
+                                <ul>
+                                    <li><a href="DPermanence.htm">Getting Stated</a></li>
+                                    <li><a href="DPermanence.htm">Inserting Data</a></li>
+                                    <li><a href="DPermanence.htm">Selecting Data</a></li>
+                                    <li><a href="DPermanence.htm">Updating Data</a></li>
+                                    <li><a href="DPermanence.htm">Deleting Data</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="textContent">
+                    <h1 class="textHeading">Activities and Intents</h1>
+                    <section class="text textBack">
+                        <div class="scrollBar">
+                            <h2 id="activities">Activities</h2>    
+                           
+                                <ul>
+                                    <li><a href="#intro">What is an Activity?</a></li>
+                                    <li><a href="#create">Creating a New Activity</a></li>
+                                    <li><a href="#changeActivity">Going from One Activity to Another</a></li>
+                                </ul>
+                            
+                            
+                            <h3 id="intro">What is an Activity?</h3>
+                            <p>
+                            An Activity represents a single screen with a user interface. The user can interact with this screen to do something such as enter text&#44; take a photo&#44; look at data.
+                            </p>
+                            <p>
+                            Applications usually consist of multiple Activities &#40;one per user interface screen&#41;.
+                            </p>
+                            <p>
+                            One of the activities is specified as the main activity&#44; which is the first activity that appears when the application is launched.
+                            </p>
+                            <p>
+                            When you go from one Activity to a new Activity&#44; the old Activity is stopped&#44; but is saved in the back stack. &#40;You can press the back button to go back to the old Activity&#41;. 
+                            </p>
+                            <p>
+                            For more information:<br>
+                            Activity API: <a href="http://developer.android.com/reference/android/app/Activity.html" title="Android Developer" target="_blank">http://developer.android.com/reference/android/app/Activity.html</a><br>
+                              Activity Developer Guide:  <a href="http://developer.android.com/guide/components/activities.html" title="Android Developer" target="_blank">http://developer.android.com/guide/components/activities.html</a>
+                            </p>
+                            <h3 id = "create">Creating a New Activity</h3>
+                            <p>
+                            To create a new Activity you need to right click the package you want the Activity in go to New&#45;>Activity then choose the Activity template you want to create &#40;We will just be using a Blank Activity&#41;.
+                            </p>
+                            <p>
+                                
+                                             <a href="images/activities/create%20activity.png" class="zoomple"><img src="images/activities/create%20activity.png" alt="Plain Text View" width="500px" class="flowCenter"></a><br>
+                              <p>  Now you will be presented with a Dialog which looks something like this:</p>
+                                <a href="images/activities/create%20activity%20dialog.png" class="zoomple"><img src="images/activities/create%20activity%20dialog.png" alt="Plain Text View" width="500px" class="flowCenter"></a>
+                            </p>
+                            <p>Name your Activity whatever you want &#40;We named ours MyNewActivity&#41;
+Most of the fields will fill in and change automatically as you change the Activity Name &#40;This is a good thing so that the files can be properly linked and synchronized&#41;.</p>
+                                <p>Now Android Studio will create your new Activity as well as an xml file &#40;activity_new.xml&#41;. The MyNewAcitivity.java and activity_new.xml are linked together by this line of autogenerated code: setContentView&#40;R.layout.activity_my_new&#41;&#59;
+</p>
+                            <a href="images/activities/create%20activity%20result.png" class="zoomple"><img src="images/activities/create%20activity%20result.png" alt="Plain Text View" width="500px" class="flowCenter"></a><br>
+                        <p>This is the layout &#40;User Interface&#41; for the Activity &#40;discussed more in&#45;depth in the User Interface Section of this tutorial&#41;.</p>           <p>The onCreate&#40;&#41; method is called when this Activity is first created. You should initialize the essential components of your Activity.</p>
+                        <p>You must implement the onCreate&#40;&#41; method to perform basic startup logic. This logic should only happen once on the creation of the application. The main uses for onCreate&#40;&#41; are generally:</p>
+                        <p>&#09;Declaring User Interface variables<br>
+                            &#09;Configuring User Interface variables &#40;Listeners&#44; Initialization etc.&#41;<br>
+                            &#09;Defining variables
+                        </p>
+                        <h2 id="changeActivity">Going from One Activity to Another</h2>
+                        <p>To go from one Activity to another Activity &#40;example: LoginActivity to UserHomeActivity&#41; you can use an Intent</p>
+                        <p>Intents can be used to start a new Activity by passing an instance of the Activity to an Intent. </p>
+                        <p>For a more indepth look at Intents:<br>
+                            Intent API: 
+<a href="http://developer.android.com/reference/android/content/Intent.html" title="Android Developer" target="_blank">http://developer.android.com/reference/android/content/Intent.html</a><br>Intent Developer Guide: 
+                            <a href="http://developer.android.com/guide/components/intents-filters.html" title="Android Developer" target="_blank">http://developer.android.com/guide/components/intents-filters.html</a></p>
+                            <p>The following is an example that goes from this Activity to the UserHomeActivity.</p>
+                        <p class="blockView">Intent userHomeIntent = new Intent&#40;this&#44; UserHomeActivity.class&#41;&#59;<br>startActivity&#40;userHomeIntent&#41;&#59;</p>
+                        <p>This is usually used in conjunction with a Button. So the user presses a button to go to the next Activity and the above code is run to go to the next Activity. Please see our guide on Buttons in the Android UI section of this tutorial.</p>
+                        <p>If you are going from one Activity to a new Activity and wish to send some data that the new Activity can add these to the Intent using the putExtra method.</p>
+                        <p>putExtra allows you to add some data to the Intent which can then be retrieved in the new Activity. There are many different putExtra methods which allow for different data types.</p>
+                        <p>Here are some you might find useful:</p>
+                         <p class="blockView">public Intent putExtra&#40;String name&#44; int value&#41;<br>public Intent putExtra&#40;String name&#44; int[] value&#41;<br>public Intent putExtra&#40;String name&#44; double value&#41;<br>public Intent putExtra&#40;String name&#44; double[] value&#41;<br>public Intent putExtra&#40;String name&#44; String value&#41;<br>public Intent putExtra&#40;String name&#44; String[] value&#41;</p>
+                    <p>These are just a few examples&#44; but most of the basic data types are allowed in the putExtra method. A full list of data types allowed is in the Android API for Intents.</p>
+                        <p><b>Parameters:</b><br>
+                            name &#45; The name of the extra data with package prefix<br>
+	                       value &#45; the data value<br>
+                           <b>Returns</b> &#45; the same Intent
+                        </p>
+                        <p>The following example puts a username and password into a String array and passes it to the Intent.</p>
+                         <p class="blockView">String[] userPass = new String[] {“username”&#44; “password”}&#59;<br>Intent userHomeIntent = new Intent&#40;this&#44; UserHomeActivity.class&#41;&#59;<br>userHomeIntent.putExtra&#40;“user_pass”&#44; userPass&#41;&#59;</p>
+                        <p>Now when we go to the userHomeActivity using the userHomeIntent we can retrieve the data using the following code:</p>
+                         <p class="blockView">Intent intent = getIntent&#40;&#41;&#59;<br>String[] userPass = intent.getExtras&#40;&#41;.getStringArray&#40;“user_pass”&#41;&#59;</p>
+                        <p><a href="#intro" title="Back to top">Back to top</a><br>&nbsp;</p>
+                        </div>
+                    </section>
+                </div>
+
+            </article>
+        </main>
+        <footer role="contentinfo" class="footerInfo">
+            <p>&copy; <a href="https://developer.android.com/about/index.html" title="Android API" target="_blank">Android API</a>
+        </footer>
+    </body>
+    
+</html>

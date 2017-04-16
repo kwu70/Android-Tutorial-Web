@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Android Tutorial</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="_scripts/tabs.js"></script>
+        <script src="_scripts/jquery-1.3.2.min.js"></script>
+        <script src="_scripts/zoomple-1.4.js"></script>
+        <script src="_scripts/zoomfun.js"></script>
+    </head>
+    <body class="background">
+        <header role="banner" class="header">
+            <div class="logo">
+                <div class="topLogo">Android Tutorial</div>
+                <div class="botLogo">Junior Capstone(Crazy 88s)</div>
+            </div>
+            <div class="navMenu">
+                <ul class="navMenuUl">
+                    <li><a href="home.htm">HOME</a></li>
+                    <li><a class="active" href="#">TUTORIAL</a></li>
+                </ul>
+            </div>
+        </header>
+        <main role="main">
+            <article role="article" class="mainContent">
+                <div class="sidebar">
+                    <div class="sideNav">
+                        <div class="sideHeader">Table of Content</div>
+                        <ol class="navDropDown" type="1">
+                            <li><a href="Intro.htm">Overview</a>
+                                <ul>
+                                    <li><a href="Intro.htm">What is Android&#63;</a></li>
+                                    <li><a href="Intro.htm">GIT MAD</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Installing.htm">Installing Android Studio</a></li>
+                            <li><a href="SettingUp.htm">Setting Up Android Studio</a></li>
+                            <li><a href="Emulator.htm">Setting up Emulator</a></li>
+                            <li><a href="Genymotion.htm">Genymotion</a></li>
+                            <li><a href="Activities.htm">Activities and Intents</a></li>
+                            <li><a href="UserInterface.htm">Android UI&nbsp;&nbsp;&nbsp;</a>
+                                <ul>
+                                    <li><a href="UserInterface.htm">Layouts<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">Creating new Layout</a></li>
+                                            <li><a href="UserInterface.htm">Relative Layout</a></li>
+                                            <li><a href="UserInterface.htm">Linear Layout</a></li>
+                                            <li><a href="UserInterface.htm">Frame Layout</a></li>
+                                            <li><a href="UserInterface.htm">Grid Layout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Text Views</a></li>
+                                    <li><a href="UserInterface.htm">Text Fields</a></li>
+                                    <li><a href="UserInterface.htm">Buttons</a></li>
+                                    <li><a href="UserInterface.htm">Spinner</a></li>
+                                    <li><a href="UserInterface.htm">Containers<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">List View</a></li>
+                                            <li><a href="UserInterface.htm">Grid View</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Date and Time<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">Date Picker</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Import Images</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="DPermanence.htm">Data Permanence</a>
+                                <ul>
+                                    <li><a href="DPermanence.htm">Getting Stated</a></li>
+                                    <li><a href="DPermanence.htm">Inserting Data</a></li>
+                                    <li><a href="DPermanence.htm">Selecting Data</a></li>
+                                    <li><a href="DPermanence.htm">Updating Data</a></li>
+                                    <li><a href="DPermanence.htm">Deleting Data</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="textContent">
+                    <h1 class="textHeading">Setting Up Android Studio</h1>
+                    <section class="text">
+                        <div id="tabContainer">
+                            <div id="tabs">
+                                <ul>
+                                    <li id="tab1"><h2><a href="#window">Windows</a></h2></li>
+                                    <li id="tab2"><h2><a href="#mac">Mac</a></h2></li>
+                                </ul>
+                            </div>
+                            <div id="containers" class="scrollBar">
+                                
+<!--******************************Window Section*****************************-->
+
+<div id="window">
+    <h2 id="projectWindows">Setting up an Android Project on Windows</h2>
+    <p>With Android Studio you can create Android appications for phone, tablet, TV, Wear, and Google Glass. The &ldquo;New Project wizard&rdquo; lets you choose the form factors for your application and adds to the project structure everything you need to get started.
+    </p>
+    <section id="wCreating">
+        <h3 class="scrollHeader">Creating new Android Studio project</h3>
+        <ul>
+            <li>Click &ldquo;Start a new Android Studio project&rdquo; on the Welcome screen</li>
+            <a href="images/prjsetup/window/JDKImg1.png" class="zoomple"><img src="images/prjsetup/window/JDKImg1.png" alt="Window Version" width="500px"></a>
+            <li>On &ldquo;New Project&rdquo; screen&#44;
+                <ul>
+                    <li>&ldquo;Application Name&rdquo; can be anything</li>
+                    <li>&ldquo;Company Domain&rdquo; can be change to anything</li>
+                    <li>&ldquo;Package name&rdquo; should be unique</li>
+                    <li>&ldquo;Project location&rdquo; can be change to any where on the hard disk because it is just a simple folder <em>(by default, Android Studio creates projects in a subfolder of your home folder)</em></li>
+                    <li>Click &ldquo;Next&rdquo;</li>
+                    <a href="images/prjsetup/window/JDKImg2.png" class="zoomple"><img src="images/prjsetup/window/JDKImg2.png" alt="Window Version" width="500px"></a>
+                </ul>
+            </li>
+            <li>Click &ldquo;Next&rdquo; to accept default setting</li>
+            <a href="images/prjsetup/window/JDKImg3.png" class="zoomple"><img src="images/prjsetup/window/JDKImg3.png" alt="Window Version" width="500px"></a>
+            <li>Click &ldquo;Next&rdquo; to accept default on &ldquo;Add an activity&rdquo; screen <em>(this is where you choose your app&#39;s primary screen)</em></li>
+            <a href="images/prjsetup/window/JDKImg4.png" class="zoomple"><img src="images/prjsetup/window/JDKImg4.png" alt="Window Version" width="500px"></a>
+            <li>Click &ldquo;Finish&rdquo; to create a new project</li>
+            <a href="images/prjsetup/window/JDKImg5.png" class="zoomple"><img src="images/prjsetup/window/JDKImg5.png" alt="Window Version" width="500px"></a>
+            <li>When you see &ldquo;Tip of the Day&rdquo; Dialog box, you can click &ldquo;Next Tip&rdquo; to learn more about Android Studio or click &ldquo;Close&rdquo; to close the dialog box.</li>
+        </ul>
+            <a href="images/prjsetup/window/JDKImg6.png" class="zoomple"><img src="images/prjsetup/window/JDKImg6.png" alt="Window Version" width="650px"></a>
+    </section>
+    <p><a href="#projectWindows" title="Back to top">Back to top</a><br>&nbsp;</p> 
+</div>
+                                
+<!--******************************Mac Section********************************-->
+
+<div id="newProjectMac">
+    <aside role="complementary">
+    <h2 id="projectMac">Setting Up an Android Project on Mac</h2>
+    <nav role="navigation">
+        <ul>
+            <li><a href="#projectMac1">Creating a New Android Project</a></li>
+            <li><a href="#projectMac2">Defining the Project and SDK Settings</a></li>
+            <li><a href="#projectMac3">Creating an Activity</a></li>
+            <li><a href="#projectMac4">Putting a Personal Stamp on Your App</a></li>
+        </ul>
+    </nav>
+    <p>With Android Studio you can create Android appications for phone, tablet, TV, Wear, and Google Glass. The &ldquo;New Project wizard&rdquo; lets you choose the form factors for your application and adds to the project structure everything you need to get started.
+    </p>
+    <aside>
+    <h3 id="projectMac1">Creating a New Android Project</h3>
+    <p> 
+        The first step in the application development process is to create a new project within the Android Studio environment. To create a new project:
+    </p>
+    <p>
+        If you have a project opened, from the &#34;File&#34; menu, select &#34;New Project&#34;:
+    </p>
+    <p><a href="images/prjsetup/mac/prj1.png" class="zoomple"><img src="images/prjsetup/mac/prj1.png" alt="Starting a New Project" width="300px" class="flowCenter"></a>      
+    </p> 
+    <p>  
+        If you don't have a project opened, in the &#34;Welcome&#34; screen, click &#34;Start a New Android Studio Project&#34;:
+    </p> 
+    <p><a href="images/prjsetup/mac/prj2.png" class="zoomple"><img src="images/prjsetup/mac/prj2.png" alt="Startting a New Project" width="400px" class="flowCenter"></a>      
+    </p>
+    </aside> 
+    <aside> 
+    <h3 id="projectMac2">Defining the Project and SDK Settings</h3>
+    <p> 
+        In the &#34;New Project&#34; window under &#34;Configure your new project&#34; define the project settings. 
+    </p>
+    <p>
+        The &#34;Application name&#34; is the name by which the application will be referenced and identified within Android Studio and is also the name that will be used when the completed application goes on sale in the Google Play store. For the purposes of this example you can set the &#34;Application name&#34; field to <span class="code">AndroidApp</span>.
+    </p>
+    <p>
+        The &#34;Package name&#34; is used to uniquely identify the application within the Android application ecosystem. It should be based on the reversed URL of your domain name followed by the name of the application. For example, if your Company domain is www.mycompany.com, and the application has been named AndroidApp, then the &#34;Package name&#34; might be specified as <span class="code">com.mycompany.androidapp</span>.
+    </p>
+    <p>
+        &#34;The Project location&#34; setting will default to a location in the folder named <span class="code">AndroidStudioProjects</span> located in your home directory and may be changed by clicking on the button to the right of the text field containing the current path setting:    
+    </p>
+    <p><a href="images/prjsetup/mac/prj3.png" class="zoomple"><img src="images/prjsetup/mac/prj3.png" alt="Setting the Project Location" width="500px" class="flowCenter"></a>      
+    </p>
+    <p>
+        Click &#34;Next&#34; to proceed.      
+    </p>
+    <p>
+        On the &#34;Select the form factors your app will run on screen&#34;, enable the &#34;Phone and Tablet&#34; option and set the &#34;Minimum SDK&#34; setting to <span class="code">API 8: Android 2.2 (Froyo)</span>:      
+    </p>
+    <p><a href="images/prjsetup/mac/prj4.png" class="zoomple"><img src="images/prjsetup/mac/prj4.png" alt="Selecting the Form Factors" width="500px" class="flowCenter"></a>      
+    </p>
+    <p>
+        The reason for selecting an older SDK release is that this ensures that the finished application will be able to run on the widest possible range of Android devices. The higher the minimum SDK selection, the more the application will be restricted to newer Android devices.      
+    </p>
+    <p>
+        A useful chart can be viewed by clicking on the &#34;Help me choose&#34; link: 
+    </p>
+    <p><a href="images/prjsetup/mac/prj5.png" class="zoomple"><img src="images/prjsetup/mac/prj5.png" alt="&#34;Help me choose&#34; link" width="300px" class="flowCenter"></a>      
+    </p>
+    <p>
+        This outlines the various SDK versions and API levels available for use and the percentage of Android devices in the marketplace on which the application will run if that SDK is used as the minimum level:
+    </p>
+    <p><a href="images/prjsetup/mac/prj6.png" class="zoomple"><img src="images/prjsetup/mac/prj6.png" alt="SDK versions and API levels" width="500px" class="flowCenter"></a>      
+    </p>
+    <p>
+        In general it should only be necessary to select a more recent SDK when that release contains a specific feature that is required for your application. To help in the decision process, selecting an API level from the chart will display the features that are supported at that level. Since the project is not intended for Google TV, Google Glass or wearable devices, keep all of the other options (&#34;TV&#34;, &#34;Wear&#34;, and &#34;Glass&#34;) unchecked. Click &#34;Next&#34;.     
+    </p>
+</aside>    
+<aside>
+    <h3 id="projectMac3">Creating an Activity</h3>
+    <p>
+        The next step is to define the type of initial activity that is to be created for the application. An activity is one of the distinguishing features of the Android framework. Activities provide the user with access to your app, and there may be many activities. An application will usually have a main activity for when the user launches the application, another activity for when she selects some content to view, for example, and other activities for when she performs other tasks within the application. A range of different activity types is available when developing Android applications. For the purposes of this example simply select the option to create a &#34;Blank Activity&#34; and click &#34;Next&#34;:
+    </p> 
+    <p><a href="images/prjsetup/mac/prj7.png" class="zoomple"><img src="images/prjsetup/mac/prj7.png" alt="Adding an Activity" width="500px" class="flowCenter"></a>      
+    </p>
+    <p>
+        On the final screen name under &#34;Choose options for your new file&#34;, change the &#34;Activity Name&#34; to <span class="code">AndroidAppActivity</span>.
+    </p>
+    <p><a href="images/prjsetup/mac/prj8.png" class="zoomple"><img src="images/prjsetup/mac/prj8.png" alt="Choosing Options for Your File" width="500px" class="flowCenter"></a>      
+    </p>
+    <p>
+        The &#34;Layout Name&#34; changes to <span class="code">activity_android_app</span>, and the &#34;Title&#34; to <span class="code">AndroidAppActivity</span>. The &#34;Menu Resource Name&#34; is <span class="code">menu_android_app</span>.
+    </p>
+    <p>
+        Click the &#34;Finish&#34; button to initiate the project creation process.
+    </p>
+    <p>
+        At this point, Android Studio has created a basic application project and opened the main project.
+    </p>
+    <p>
+        The newly created project and references to associated files are listed in the &#34;Project&#34; tool window located on the left hand side of the main project window. The &#34;Project&#34; tool window has a number of modes in which information can be displayed. By default, this panel will be in Android mode. This setting is controlled by the drop down menu at the top of the panel. If the panel is not currently in Android mode, click on this menu and switch to Android mode:
+    </p>
+    <p><a href="images/prjsetup/mac/prj9.png" class="zoomple"><img src="images/prjsetup/mac/prj9.png" alt="NewProject9" width="300px" class="flowCenter"></a>      
+    </p>
+    <p>
+        The example project created for us when we selected the option to create an activity, consists of a user interface containing a label that will read “Hello World” when the application is executed:      
+    </p>
+    <p><a href="images/prjsetup/mac/prj10.png" class="zoomple"><img src="images/prjsetup/mac/prj10.png" alt="NewProject10" width="400px" class="flowCenter"></a>      
+    </p>
+    <p>
+        It contains some default files:      
+    </p>
+    <p>
+        <span class="code">app/src/main/res/layout/activity_android_app.xml</span>      
+    </p>
+    <p>
+        This is the XML layout file for the activity you added when you created the project with Android Studio. The file includes some default settings and a TextView element that displays the message, "Hello world!"       </p>
+    <p>
+        <span class="code">app/src/main/java/com.mycompany.androidapp/AndroidAppActivity.java</span>  
+    </p>
+    <p>
+        A tab for this file appears in Android Studio when the New Project workflow finishes. When you build and run the app, the Activity class starts the activity and loads the layout file that says "Hello World!"      
+    </p>
+    <p>
+        <span class="code">app/src/main/AndroidManifest.xml</span>      
+    </p>
+    <p>
+        The manifest file describes the fundamental characteristics of the app and defines each of its components.     
+    </p>
+    <p>
+        <span class="code">app/build.gradle</span>      
+    </p>
+    <p>
+        Android Studio uses Gradle to compile and build your app. Usually, you are only interested in the build.gradle file for the module. This is where your app's build dependencies are set, including the defaultConfig settings:     
+    </p>
+    <p>
+        <ul>
+            <li><span class="code">compiledSdkVersion</span> is the platform version against which you will compile your app. By default, this is set to the latest version of Android available in your SDK.</li>      
+            <li><span class="code">applicationId</span> is the fully qualified package name for your application that you specified during the New Project workflow.</li>      
+            <li><span class="code">minSdkVersion</span> is the Minimum SDK version you specified during the New Project workflow which is the earliest version of the Android SDK that your app supports.</li>      
+            <li><span class="code">targetSdkVersion</span> indicates the highest version of Android with which you have tested your application. As new versions of Android become available, you should test your app on the new version and update this value to match the latest API level.</li>
+        </ul>         
+    </p>
+    <p>
+        There are the <span class="code">/res</span> subdirectories that contain the resources for your application:
+    </p>
+    <p>
+        <span class="code">drawable<em>&#60;density&#62;/</em></span>   &#45; Directories for drawable objects (such as bitmaps) that are designed for various densities. Here you'll find the ic_launcher.png that appears when you run the default app.
+    </p>
+    <p>
+        <span class="code">layout/</span>   &#45; Directory for files that define your app's user interface like activity_android_app.xml, discussed above, which describes a basic layout for the AndroidAppActivity class.      
+    </p>
+    <p>
+        <span class="code">menu/</span>   &#45; Directory for files that define your app's menu items.     
+    </p>
+    <p>
+        <span class="code">values/</span>   &#45; Directory for other XML files that contain a collection of resources, such as string and color definitions. The strings.xml file defines the "Hello world!" string that displays when you run the default app.      
+    </p>
+    </aside>
+    <aside>
+    <h3 id="projectMac4">Putting a Personal Stamp on Your App</h3>
+    <p>
+        You have made your first “Hello World” appication. You can personalize your message. Navigate to <span class="code">res/values/strings.xml</span>. Double-click the file. When you open the file, you will see three string resources in XML.
+    </p>
+    <p> 
+        These resources are accessed in different places, but it is very convenient to have all of the text used in your application in one file. If you need to translate it, or if you need to remove some references from your application, it will be easy to make all the changes here.
+    </p>
+    <p>
+        Change the ”hello_world” string. That string is the one that the app displays on the screen. So, change it to something more personal that incorporates your own name – something like:    
+    </p>
+    <p class="blockView">&#60;string name=&#34;hello_world&#34;&#62;Irina is learning Android!&#60;/string&#62;</p>
+    <p>
+        Click Run. When the app launches you will see your personalized message:   
+    </p>
+    <p><a href="images/prjsetup/mac/prj11.png" class="zoomple"><img src="images/prjsetup/mac/prj11.png" alt="NewProject11" width="400px" class="flowCenter"></a>      
+    </p>
+    <p> 
+        To read more about creating an Android Project refer to the<a href="http://developer.android.com/training/basics/firstapp/creating-project.html" title="Creating an Android Project" target="_blank">http://developer.android.com/training/basics/firstapp/creating-project.html</a>
+    </p>   
+    </aside> 
+     <p><a href="#newProjectMac" title="Back to top">Back to top</a><br>&nbsp;</p>
+</div>      
+<!--******************************End of Tabs*****************************-->
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </main>
+        <footer role="contentinfo" class="footerInfo">
+            <p>&copy; <a href="https://developer.android.com/about/index.html" title="Android API" target="_blank">Android API</a>
+        </footer>
+    </body>
+    
+</html>

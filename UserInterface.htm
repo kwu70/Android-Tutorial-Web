@@ -1,0 +1,980 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Android Tutorial</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="_scripts/tabs.js"></script>
+        <script src="_scripts/jquery-1.3.2.min.js"></script>
+        <script src="_scripts/zoomple-1.4.js"></script>
+        <script src="_scripts/zoomfun.js"></script>
+    </head>
+    <body class="background">
+        <header role="banner" class="header">
+            <div class="logo">
+                <div class="topLogo">Android Tutorial</div>
+                <div class="botLogo">Junior Capstone(Crazy 88s)</div>
+            </div>
+            <div class="navMenu">
+                <ul class="navMenuUl">
+                    <li><a href="home.htm">HOME</a></li>
+                    <li><a class="active" href="#">TUTORIAL</a></li>
+                </ul>
+            </div>
+        </header>
+        <main role="main">
+            <article role="article" class="mainContent">
+                <div class="sidebar">
+                    <div class="sideNav">
+                        <div class="sideHeader">Table of Content</div>
+                        <ol class="navDropDown" type="1">
+                            <li><a href="Intro.htm">Overview</a>
+                                <ul>
+                                    <li><a href="Intro.htm">What is Android&#63;</a></li>
+                                    <li><a href="Intro.htm">GIT MAD</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Installing.htm">Installing Android Studio</a></li>
+                            <li><a href="SettingUp.htm">Setting Up Android Studio</a></li>
+                            <li><a href="Emulator.htm">Setting up Emulator</a></li>
+                            <li><a href="Genymotion.htm">Genymotion</a></li>
+                            <li><a href="Activities.htm">Activities and Intents</a></li>
+                            <li><a href="UserInterface.htm">Android UI&nbsp;&nbsp;&nbsp;</a>
+                                <ul>
+                                    <li><a href="UserInterface.htm">Layouts<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">Creating new Layout</a></li>
+                                            <li><a href="UserInterface.htm">Relative Layout</a></li>
+                                            <li><a href="UserInterface.htm">Linear Layout</a></li>
+                                            <li><a href="UserInterface.htm">Frame Layout</a></li>
+                                            <li><a href="UserInterface.htm">Grid Layout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Text Views</a></li>
+                                    <li><a href="UserInterface.htm">Text Fields</a></li>
+                                    <li><a href="UserInterface.htm">Buttons</a></li>
+                                    <li><a href="UserInterface.htm">Spinner</a></li>
+                                    <li><a href="UserInterface.htm">Containers<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">List View</a></li>
+                                            <li><a href="UserInterface.htm">Grid View</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Date and Time<img src="images/arrow1.jpg" width="20px" class="bottom flowRight"></a>
+                                        <ul>
+                                            <li><a href="UserInterface.htm">Date Picker</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="UserInterface.htm">Import Images</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="DPermanence.htm">Data Permanence</a>
+                                <ul>
+                                    <li><a href="DPermanence.htm">Getting Stated</a></li>
+                                    <li><a href="DPermanence.htm">Inserting Data</a></li>
+                                    <li><a href="DPermanence.htm">Selecting Data</a></li>
+                                    <li><a href="DPermanence.htm">Updating Data</a></li>
+                                    <li><a href="DPermanence.htm">Deleting Data</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="textContent">
+                    <h1 class="textHeading">Android UI</h1>
+                    <section class="text">
+                        <div id="tabContainer">
+                            <div id="tabs">
+                                <ul>
+                                    <li id="tab1"><h2><a href="#layouts">Layouts</a></h2></li>
+                                    <li id="tab2"><h2><a href="#textViews">TextViews</a></h2></li>
+                                    <li id="tab2"><h2><a href="#textFields">Text Fields</a></h2></li>
+                                    <li id="tab2"><h2><a href="#buttons">Buttons</a></h2></li>
+                                    <li id="tab3"><h2><a href="#spinner">Spinner</a></h2></li>
+                                    <li id="tab4"><h2><a href="#container">Containers</a></h2></li>
+                                    <li id="tab5"><h2><a href="#dateTime">Date &amp; Time</a></h2></li>
+                                </ul>
+                            </div>
+                            <div id="containers" class="scrollBar">
+                                
+                                
+<!--Layout Section-->
+                                
+<div id="layouts">
+    <h2>Layouts</h2>
+    <nav>
+        <ul>
+            <li><a href="#NewLayout" title="New Layout">Creating New Layouts</a></li>
+            <li><a href="#FrameLayout" title="Frame Layout">Frame Layouts</a></li>
+            <li><a href="#LinearLayout" title="Linear Layout">Linear Layouts</a></li>
+            <li><a href="#RelativeLayout" title="Relative Layout">Relative Layouts</a></li>
+            <li><a href="#GridLayout" title="Grid Layout">Grid Layouts</a></li>
+        </ul>
+    </nav>
+    <p>Every time an activity is created, by default a layout for that activity is created. The layout depicts how we want to display items on the screen. There are many different type of layout&#44; and depending on the type we use&#44; we can either make our application screen badly organized&#44; or formatted in a more professional manner. In this section of the tutorial&#44; I will talk about how to effectively use the different type of layouts and how different screen size &#40;hardware&#41; affect how things look with different layouts.
+        <a href="images/userInterface/Layout/create_avtivity.png" class="zoomple"><img src="images/userInterface/Layout/create_avtivity.png" alt="Creating New Activity" width="500px" class="flowCenter"></a>
+        <figcaption>Figure 1. Creating a new activity. The highlighted area is the name for the new layout.</figcaption>
+    </p>
+    <p>All the layouts will be accessible through res &#8594 layout&#44; as shown in Figure 2. All layouts can be customizable through a GUI interface or through an xml file. The option to choose what you want to modify is located at the bottom left corner&#44; &ldquo;Design&rdquo; for GUI interface&#44; and &ldquo;Text&rdquo; for xml code.
+        <a href="images/userInterface/Layout/layout_directory.png" class="zoomple">
+        <img src="images/userInterface/Layout/layout_directory.png" width="300px" class="flowCenter"></a>
+        <figcaption>Figure 2. Directory of where the layouts are stored.</figcaption>        
+    </p>
+    <p>When a new activity is created&#44; the default layout that comes with that activity is initially set to a &#34;Relative Layout&#34; or &#34;LinearLayout&#34;. However it is possible to replace the default layout with another type of layout&#44; or Container. The default layout can be changed directly through the layout xml code or by creating a new layout. Example of possible Containers that can be used as a layout are&#44; ListView&#44; GridView&#44; ScrollView&#44; or HorizontalScrollView.
+    </p>
+    <p><b class="Bonus">Important&#58;</b> you should not use ScrollView and ListView together&#44; since ListView is scrollable.</p>
+    <p><b class="Bonus">Hint&#58;</b> Multiple layouts can be used in a layout activity. For instance&#44; setting the default layout to a ScrollView then stacking a FrameLayout and LinearLayout on top of the ScrollView. The FrameLayout will be used to hold a picture&#44; while the LinearLayout will hold buttons.
+    </p>
+    <p><b class="Bonus">Hint&#58;</b> Not all Android device will have the same screen size&#44; so you have to keep in mind that for smaller screen size&#44; the views will be compressed together and will look unorganized.
+    </p>
+    <p>For more information on AdpaterViews or Layout&#58; 
+        <a href="http://developer.android.com/guide/topics/ui/declaring-layout.html" title="Android Developer" target="_blank">http://developer.android.com/guide/topics/ui/declaring-layout.html</a></p>
+    <section>
+        <h3 id="NewLayout">Creating New Layouts</h3>
+        <p><a href="images/userInterface/Layout/creating_new_layout.png" class="zoomple"><img src="images/userInterface/Layout/creating_new_layout.png" alt="Creating New Layout" width="500px" class="flowCenter"></a>
+        <figcaption>Figure 3. Creating a new layout.</figcaption> </p>
+        <p>The new layout xml file have to be created in the layout folder. Also&#44; it is important that the name of the newly created layout matches the name in &#34;setContentView&#40;&#41;&#34; or the layout won’t be linked to any activity. The &#34;setContentView&#40;&#41;&#34; section is shown in the red rectangle box under the activity for a specific layout. As indicated by the example code below&#44; replace &#34;name&#95;of&#95;new&#95;layout&#34; with the name of the new layout.
+        </p>
+        <p class="blockView">protected void onCreate&#40;Bundle savedInstanceState&#41; &#123;
+                super.onCreate&#40;savedInstanceState&#41;&#59;
+                setContentView&#40;R.layout.name&#95;of&#95;new&#95;layout&#41;&#59;
+&#125;</p>
+        <p><a href="images/userInterface/Layout/creating_layout_wizard.png" class="zoomple"><img src="images/userInterface/Layout/creating_layout_wizard.png" alt="Creating New Layout" width="500px" class="flowCenter"></a>
+        <figcaption>Figure 4. Layout creation wizard.</figcaption> </p>
+        <p>When the Layout creation wizard start up&#44; the &#34;Layout File Name&#34; must be the same as that in the activity. The &#34;Root Tag&#34; is where we choose the initial layout or view to be used as the default for this screen. Once a &#34;Root Tag&#34; is filled in&#44; the new layout wizard will automatically fill in the required xml code for the new layout. Below is the xml code of a new layout that is created along with the activity&#44; this code is the parent layout &#40;default layout&#41;. Any addition to this layout&#44; except the option parameter&#44; will be stored in the body of the layout.
+        </p>
+        <p class="blockView">&#60;RelativeLayout
+            xmlns&#58;android&#61;&#34;http&#58;&#47;&#47;schemas.android.com&#47;apk&#47;res&#47;android&#34;
+            xmlns&#58;tools&#61;&#34;http&#58;&#47;&#47;schemas.android.com&#47;tools&#34;
+            android&#58;layout&#95;width&#61;&#34;match&#95;parent&#34;
+            android&#58;layout&#95;height&#61;&#34;match&#95;parent&#34;
+            android&#58;paddingLeft&#61;&#34;@dimen&#47;activity&#95;horizontal&#95;margin&#34;
+            android&#58;paddingRight&#61;&#34;@dimen&#47;activity&#95;horizontal&#95;margin&#34;
+            android&#58;paddingTop&#61;&#34;@dimen&#47;activity&#95;vertical&#95;margin&#34;
+            android&#58;paddingBottom&#61;&#34;@dimen&#47;activity&#95;vertical&#95;margin&#34;
+            tools&#58;context&#61;&#34;com.example.kenny.example.LinearLayoutExample&#34;&#62;
+
+            &#60;&#33;&#45;&#45; Body of layout &#45;&#45;&#62;
+&#60;&#47;RelativeLayout&#62;</p>
+        
+        <p>The first instance of the layout name&#44; in this case&#44; RelativeLayout is used. You can manually change this value to a different layout. If the default layout is changed&#44; the closing must be the same type as well.</p>
+        <p class="blockView">&#60;LinearLayout&#62;
+            &#60;&#33;&#45;&#45; Body of layout &#45;&#45;&#62;
+&#60;&#47;LinearLayout&#62;</p>
+        <p>The tools and padding are not required&#44; they are additional options added for this layout.
+For more information about the parameter for the layout&#44; visit the Android API page. 
+        </p>
+    </section>
+    <section>
+        <h3 id="FrameLayout">Frame Layout</h3>
+        <p><a href="images/userInterface/Layout/Frame.png">
+            <img src="images/userInterface/Layout/Frame.png" width="300px" class="flowCenter"></a>
+            <figcaption>Figure 5. Example of how FrameLayout are formatted.</figcaption></p>
+        <p>FrameLayout are used for blocking out an area of the screen in order to display only one item&#44; or to have stacks of view on top of another. FrameLayout is mainly used for holding a single child view&#44; since it is difficult to scale the size so that they don’t overlap. As shown in the Figure&#44; A is the original view used for blocking out the whole screen &#40;assume A is the size of the screen&#41;. If another view is required&#44; B is the new view&#44; and is stack on top of A&#44; and the next view will stack on top of B&#44; and henceforth. Below is the xml code for a simple layout created on top of the default layout.</p>
+        <p class="blockView">&#60;FrameLayout
+            android&#58;layout&#95;width&#61;&#34;fill&#95;parent&#34;
+            android&#58;layout&#95;height&#61;&#34;fill&#95;parent&#34;
+            android&#58;layout&#95;alignParentLeft&#61;&#34;true&#34;
+            android&#58;layout&#95;alignParentStart&#61;&#34;true&#34;
+            android&#58;layout&#95;alignParentTop&#61;&#34;true&#34;&#62;    
+
+            &#60;&#33;&#45;&#45; Body of layout &#45;&#45;&#62;
+
+&#60;&#47;FrameLayout&#62;</p>
+        <p>More information about this layout and its parameter can be found in the following link&#58; <a href="http://developer.android.com/reference/android/widget/FrameLayout.html" title="Frame Layout" target="_blank">http://developer.android.com/reference/android/widget/FrameLayout.html</a></p>
+    </section>
+    <section>
+        <h3 id="LinearLayout">Linear Layout</h3>
+        <p>
+        <a href="images/userInterface/Layout/Horizontal.png">
+        <img src="images/userInterface/Layout/Horizontal.png" width="325px" class="flowLeft"</a>
+        <a href="images/userInterface/Layout/Vertical.png">
+        <img src="images/userInterface/Layout/Vertical.png" width="325px" class="doubleFlowRight"></a>
+        <figcaption>Figure 6a. Horizontal orientation of LinearLayout. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure 6b. Vertical orientation of LinearLayout.</figcaption>
+<!--
+        <figcaption>Figure 6a. Horizontal orientation of LinearLayout.<br>
+        Figure 6b. Vertical orientation of LinearLayout.</figcaption>
+-->
+            </p>
+           <p>
+            LinearLayout group items by aligning all children in a single direction&#44; either horizontally or vertically. The type of orientation depicts how the contents are displayed&#44; as shown in Figure 6. The properties for the layout can be changed through the Properties pane as shown in Figure 7 or directly changing the xml code for the layout. 
+        </p>
+        
+        <p>
+            Hint&#58; make sure not to add too much views&#44; or the screen will not fit all of them. If there is too much&#44; then the only way to view them would be to rotate the screen.    
+        </p>
+         		 
+        <p><a href="images/userInterface/Layout/LinearLayoutOrientation.png" class="zoomple">
+        <img src="images/userInterface/Layout/LinearLayoutOrientation.png" width="300px" class="flowCenter"></a>
+        <figcaption>Figure 7. Layout properties.</figcaption></p>
+        
+        <p>
+            Below is the xml code for this layout. At &#34;android&#58;orientation&#34;&#44; the LinearLayout orientation can be either set to &#34;vertical&#34; or &#34;horizontal&#34;.
+        </p>
+            
+        <p class="blockView">&#60;LinearLayout
+            android&#58;orientation&#61;&#34;vertical&#34;
+            android&#58;layout&#95;width&#61;&#34;fill&#95;parent&#34;
+            android&#58;layout&#95;height&#61;&#34;fill&#95;parent&#34;
+            android&#58;layout&#95;alignParentTop&#61;&#34;true&#34;
+            android&#58;layout&#95;alignParentLeft&#61;&#34;true&#34;
+            android&#58;layout&#95;alignParentStart&#61;&#34;true&#34;&#62;
+
+&#60;&#47;LinearLayout&#62;</p>
+        
+        <p>More information on this layout parameter can be found in the following link&#58; <a href="http://developer.android.com/reference/android/widget/LinearLayout.LayoutParams.html" title="Linear Layout" target="_blank">http://developer.android.com/reference/android/widget/LinearLayout.LayoutParams.html</a></p>
+    </section>
+    <section>
+        <h3 id="RelativeLayout">Relative Layout</h3>
+        
+        <p><a href="images/userInterface/Layout/Relative.png">
+        <img src="images/userInterface/Layout/Relative.png" width="300px" class="flowCenter"></a>
+        <figcaption>Figure 8. Structure of RelativeLayout.</figcaption></p>
+        
+        <p>
+            RelativeLayout can display child view relative to the parent position. This layout will eliminate nested views such as those in the LinearLayout. Furthermore&#44; this layout will improve performance if there is a need to use several nested LinearLayout group. By default&#44; the layout created with an activity is set to RelativeLayout. Below is the xml code for a simple layout created on top of the default layout.
+        </p>
+        
+        <p class="blockView">&#60;RelativeLayout
+            android&#58;layout&#95;width&#61;&#34;match&#95;parent&#34;
+            android&#58;layout&#95;height&#61;&#34;match&#95;parent&#34;
+            android&#58;layout&#95;gravity&#61;&#34;center&#95;vertical&#34;&#62;
+
+            &#60;&#33;&#45;&#45; Body of layout &#45;&#45;&#62;
+
+&#60;&#47;RelativeLayout&#62;</p>
+        
+        <p>More information about this layout and its parameter can be found in the following link&#58; <a href="http://developer.android.com/reference/android/widget/RelativeLayout.LayoutParams.html" title="Relative Layout" target="_blank">http://developer.android.com/reference/android/widget/RelativeLayout.LayoutParams.html</a></p>
+    </section>
+    
+    <section>
+        <h3 id="GridLayout">Grid Layout</h3>
+        
+        <p><a href="images/userInterface/Layout/GridLayout.png">
+        <img src="images/userInterface/Layout/GridLayout.png" width="300px" class="flowCenter"></a>
+        <figcaption>Figure 9. Structure of GridLayout.</figcaption></p>
+        
+        <p>
+            Grid Layout contain an infinite amount of cells&#44; with the topmost left cell as the starting position. The child view start at position &#40;0&#44; 0&#41;. For this layout&#44; it is possible to start at any position&#44; but would be extremely difficult to scale if the child view is placed in a relative format. The recommended approach would be to start at position &#40;0&#44; 0&#41; and align the child view to the view at position &#40;0&#44; 0&#41;.
+        </p>
+        
+        <p>
+            Below is the xml code for this layout. A button view is created to show the position of the button in this layout&#44; the &#34;android&#58;layout&#95;row&#34; and &#34;android&#58;layout&#95;column&#34; code determine the position.
+        </p>
+        
+        <p class="blockView">&#60;GridLayout
+            android&#58;layout&#95;width&#61;&#34;fill&#95;parent&#34;
+            android&#58;layout&#95;height&#61;&#34;fill&#95;parent&#34;
+            android&#58;layout&#95;alignParentTop&#61;&#34;true&#34;
+            android&#58;layout&#95;alignParentLeft&#61;&#34;true&#34;
+            android&#58;layout&#95;alignParentStart&#61;&#34;true&#34;
+            android&#58;layout&#95;alignParentRight&#61;&#34;true&#34;
+            android&#58;layout&#95;alignParentEnd&#61;&#34;true&#34;&#62;
+
+                &#60;Button
+                    android&#58;layout&#95;width&#61;&#34;wrap&#95;content&#34;
+                    android&#58;layout&#95;height&#61;&#34;wrap&#95;content&#34;
+                    android&#58;text&#61;&#34;New Button&#34;
+                    android&#58;id&#61;&#34;@+id&#47;button4&#34;
+                    android&#58;layout&#95;row&#61;&#34;0&#34;
+                    android&#58;layout&#95;column&#61;&#34;0&#34; &#47;&#62;
+
+&#60;&#47;GridLayout&#62;</p>
+        
+        <p>More information about this layout and its parameter can be found in the following link&#58; <a href="http://developer.android.com/reference/android/widget/GridLayout.html" title="Grid Layout" target="_blank">http://developer.android.com/reference/android/widget/GridLayout.html</a></p>
+    </section>
+</div>
+                                
+<!--Text Views Section-->
+                                
+<div id="textViews">
+    <aside role="complementary">
+        <h2 id="textView">TextView - Displaying Text on the Screen</h2>
+        <ul>
+            <li><a href="#wtextView">What is a TextView&#63;</a></li>
+            <li><a href="#ctextView">Creating a TextView</a></li>
+            <li><a href="#atextView">Accessing a TextView in an Activity</a></li>
+            <li><a href="#gtextView">Getting the Text from a TextView</a></li>
+            <li><a href="#ttextView">Changing the Text in a TextView</a></li>
+            <li><a href="#stextView">Changing the Text Size</a></li>
+            <li><a href="#cotextView">Changing the Text Color</a></li>
+        </ul>
+            <aside>
+                <h3 id="wtextView">What is a TextView&#63;</h3>
+                <p>TextView is a very simple text editor. TextView displays text to the user and optionally allows the user to edit the text.
+                </p>
+                <p>TextView is often used as a label or title. They are usually just used to display text information or data directly on the screen. A default TextView is uneditable by the user, but can be changed to be editable.
+                </p>
+                <p>In this section we will run through the basics of TextView such as creating a new TextView, changing the text in TextView, and changing the font size and font color of a TextView.
+                </p>
+            </aside>
+            <aside>
+                <h3 id="ctextView">Creating a TextView</h3>
+                <p>To create a TextView go to the layout_name.xml where you wish the Text to be displayed. &#40;All layouts are, by default, located in the layout subfolder of the res folder&#41;.</p>
+                <aside>
+                    <h4>TextView Creation using Design Interface</h4>
+                    <p>In Design you can simply go the Widget section in the Palette on the right side and select the TextView you wish to use and drag it to the position you wish to place it.
+                    </p>
+                    <p>There are usually four options to choose from &#40;the difference isn’t major&#41;.<br>
+Plain TextView - is a barebones no thrills attached TextView<br>
+Large Text - is a TextView that has a default text size of 22sp<br>
+Medium Text - is a TextView that has a default text size of 18sp<br>
+Small Text - is a TextView that has a default text size of 14sp<br>
+The text size can be set manually so which TextView you choose is up to you.
+                    </p>
+                </aside>
+                <aside>
+                    <strong>Important Side Note: What is sp&#63;</strong>
+                    <p>The sp stands for Scale-Independent Pixels – Whenever you are using font you should use sp. The reason for this is because sp is scaled by the user’s font size preference. So it is recommended you use sp whenever specifying the size of a font.
+
+                    </p>
+                    <p>You can change the text displayed and the id of the TextView you just placed in the properties tab on the right. You can also just double click the TextView and fill out the dialog that pops up.</p>
+                    <p><a href="images/userInterface/Widgets/plainTextViewBig.jpg" class="zoomple"><img src="images/userInterface/Widgets/plainTextView.png" alt="Plain Text View" width="500px" class="flowCenter"></a>
+                        <br>
+                    <Strong class="Bonus">Note:</Strong> The id allows you to access this particular TextView in any Activity so make sure its unique and a name that you will be able to remember.
+
+                    </p>
+                </aside>
+                <aside>
+                    <h4>TextView Creation using XML Text Editor Interface</h4>
+                    <p>It you want to use the XML Text Editor you can use the following code to add a new TextView to the screen
+                    </p>
+                    <p class="blockView">&lt;TextView
+                        android&#58;layout_width &#61; &ldquo;wrap_content&rdquo;
+                        android&#58;layout_height &#61; &ldquo;wrap_content&rdquo;
+                        android&#58;text &#61; &ldquo;I&#39;m a Ramblin Wreck&#33;&rdquo;
+                        android&#58;id&#61;&ldquo; &#64;id/myTextView&rdquo;/&gt;</p>
+
+                <p>This XML code should be placed within the layout or container that you wish the Text to appear.
+                </p>
+                <p>When the app is running, the text: “I’m A Ramblin Wreck!” will appear in the top left corner of the screen
+                </p>
+                </aside>
+            </aside>
+            <aside>
+                <h3 id="atextView">Accessing a TextView in an Activity</h3>
+                <p>In order to access this particular TextView in an Activity simply use the following code in the Activity that is using the layout containing our TextView
+                </p>
+                <p class="blockView">TextView myTextView &#61; &#40;TextView&#41; findViewById&#40;R.id.myTextView&#41;&#59;</p>
+            </aside>
+            <aside>
+                <h3 id="gtextView">Getting the Text from a TextView</h3>
+                <p>To get the text from the TextView you can use the code in the Activity&#58;</p>
+                <p class="blockView">String myString &#61; myTextView.getText&#40;&#41;.toString&#40;&#41;&#59;</p>
+                <p><Strong class="Bonus">Note:</Strong> getText&#40;&#41; returns a charSequence not a String so you have to run the to String method in order to get the actual String value in the TextView.
+</p>
+            </aside>
+            <aside>
+                <h3 id="ttextView">Changing/Updating the Text in the TextView</h3>
+                <p>Now to change the text that is displayed from “I’m A Ramblin Wreck” to “I Love Android!” you can use the following code.</p>
+                <p class="blockView">myTextView.setText&#40;&ldquo;I Love Android&#33;&rdquo;&#41;&#59;
+</p>
+                <p>Now our TextView will display &ldquo;I Love Android&#33;&rdquo;</p>
+            </aside>
+            <aside>
+                <h3 id="stextView">Changing the Text Size</h3>
+                <p>To change the text size you can add the following text to your XML field.</p>
+                <p class="blockView">android:textSize=&ldquo;35sp&rdquo;</p>
+                <p>sp stands for Scale-Independent Pixels – Whenever you are using text you should use sp to set the size. The reason for this is because sp is scaled by the user’s font size preference. So it is recommended you use sp whenever specifying the size of text.
+</p>
+            </aside>
+            <aside>
+                <h3 id="cotextView">Changing the Text Color</h3>
+                <p>To change the text color you can add the following code to your XML field in the layout file.</p>
+                <p class="blockView">android:textColor=&ldquo;&#35;8BC34A&rdquo;</p>
+                <p>&#40;The &#35;8BC34A is a Hex value that corresponds to the light green Android color&#41;.</p>
+                <p>If you do not know the exact hex value for the color that you are dreaming of then you can go to the Design view in Android Studio and click the TextView you want to edit.</p>
+                <p>Then, in the properties tab on the right you can find the TextColor field where you can insert a Hex value or click the button, which will open the resources dialog.
+                <a href="images/userInterface/Widgets/widgets2.png" class="zoomple"><img src="images/userInterface/Widgets/widgets2.png" alt="Plain Text View" width="500px" class="flowCenter"></a>
+                </p>
+                <p>
+                    You can now set the color manually by clicking the Color tab and creating your dream color.
+                </p>
+                <p>
+                    Side Note: A good resource for getting pretty colors that complement Android is provided by Google here: <a href="http://www.google.com/design/spec/style/color.html#" title="Color">Color Palette</a><br>
+                    This website also provides useful tips for using color when designing user interfaces.
+                </p>
+                
+            </aside>
+        </aside>
+                                
+    <p><a href="#textViews" title="Back to top">Back to top</a><br>&nbsp;</p>
+</div>
+                            
+<!--Text Field Section-->
+                            
+<div id="textFields">
+    <aside role="complementary">
+        <h2 id="textField">Text Fields</h2>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#wtextField">What is a Text Field&#63;</a></li>
+                <li><a href="#ctextField">Adding a Text Field</a></li>
+                <li><a href="#atextField">Setting the Input Type</a></li>
+                <li><a href="#gtextField">Setting Other Behaviors</a></li>
+                <li><a href="#ttextField">Specifying Keyboard Actions</a></li>
+                <li><a href="#stextField">Getting the Input: Dealing with the Action</a></li>
+            </ul>
+        </nav>
+            <aside>
+                <h3 id="wtextField">What is a Text Field&#63;</h3>
+                <p>With a text field you can allow the user to type any text into your app. It can be either single line or multi&#45;line. When the user touches the text field, a keyboard pops up, and the user can enter the text. In addition to typing, text fields allow text selection &#40;cut, copy, paste&#41; and data look&#45;up via auto&#45;completion. 
+                </p>
+            </aside>
+            <aside>
+                <h3 id="ctextField">Adding a Text Field</h3>
+                <p>From the “Palette” drag a text field of your choice. For example, if you want the user to input a name, you should drag the “Person Name” field:
+                </p>
+                <a href="images/userInterface/TextFields/textField1.png" class="zoomple"><img src="images/userInterface/TextFields/textField1.png" alt="Adding a Text Field" width="400px" class="flowCenter"></a>
+                <p>Place it on the screen:
+                </p>
+                <a href="images/userInterface/TextFields/textField2.png" class="zoomple"><img src="images/userInterface/TextFields/textField2.png" alt="Placing a Text Field on the Screen" width="400px" class="flowCenter"></a>
+                <p>In the Properties set the text field’s ID to a descriptive name:
+                </p>
+                <a href="images/userInterface/TextFields/textField3.png" class="zoomple"><img src="images/userInterface/TextFields/textField3.png" alt="Setting a Text Field's ID" width="400px" class="flowCenter"></a>
+                <p>You can also add a hint property:
+                </p>
+                <a href="images/userInterface/TextFields/textField4.png" class="zoomple"><img src="images/userInterface/TextFields/textField4.png" alt="Adding a hint" width="400px" class="flowCenter"></a>
+                <p>When the application is running, the hint lets the users know what they are supposed to do:
+                </p>
+                <a href="images/userInterface/TextFields/textField5.png" class="zoomple"><img src="images/userInterface/TextFields/textField5.png" alt="The Hint is helpful when the Application is Running" width="400px" class="flowCenter"></a>
+            </aside>
+            <aside>
+                <h3 id="atextField">Setting the Input Type</h3>       
+                <p>Text fields can have different input types, such as name, email address, or phone number. The type determines what kind of characters is allowed inside the field. You can enter numbers, letters, symbols, etc. into the text field which you need to define in your layout.
+                </p>
+                <p>To set the type of input:
+                </p>
+                <p>In the layout folder open your XML file:
+                </p>
+                <a href="images/userInterface/TextFields/textField6.png" class="zoomple"><img src="images/userInterface/TextFields/textField6.png" alt="Openning the XML file" width="400px" class="flowCenter"></a>
+                <p>Click the “Text” tab under the XML editor:
+                </p>
+                <a href="images/userInterface/TextFields/textField7.png" class="zoomple"><img src="images/userInterface/TextFields/textField7.png" alt="The &#34;Text&#34; Tab" width="400px" class="flowCenter"></a>
+                <p>Specify the type of input you want for your <span class="code">EditText</span> object with the <span class="code">android:inputType</span> attribute. For example, if you want the user to input name, you should use the <span class="code">textPersonName</span> input type:
+                </p>
+                <a href="images/userInterface/TextFields/textField8.png" class="zoomple"><img src="images/userInterface/TextFields/textField8.png" alt="Specifying the textPersonName Input Type" width="400px" class="flowCenter"></a>
+                <p>Here we specify that the input text should be of the text type.
+                </p>
+                <p>For a full list of input types go to
+                <a href="http://developer.android.com/reference/android/widget/TextView.html#attr_android:inputType" title="Input Types">http://developer.android.com/reference/android/widget/TextView.html#attr_android:inputType</a><br>    
+                </p>
+            </aside>
+            <aside>
+            <h3 id="gtextField">Setting Other Behaviors</h3>        
+                <p>With <span class="code">android:inputType</span> you can also control certain keyboard behaviors, such as whether to capitalize all new words or use features like auto-complete and spelling suggestions. This attribute allows bitwise combinations so you can specify both a keyboard layout and one or more behaviors at once.
+                </p> 
+                <p>For example, in addition to the text input type, we can specify that the first letter of each word should automatically be capitalized, and the text suggestions should be disabled:
+                </p>    
+                <p class="blockView">android:inputType="textPersonName|textCapWords|textNoSuggestions"
+                </p>
+                <p>For the list of all behaviors go to
+                <a href="http://developer.android.com/reference/android/widget/TextView.html#attr_android:inputType#" title="Input Types">http://developer.android.com/reference/android/widget/TextView.html#attr_android:inputType</a><br>    
+                </p>    
+            </aside>
+            <aside>
+            <h3 id="ttextField">Specifying Keyboard Actions</h3>    
+                <p>Android has a control called the Input Method Editor &#40;IME&#41;. The IME manages the input. You can tell the IME what to do once the user has entered the text. You can do this by declaring the <span class="code">android: simeOptions</span> attribute, for example: 
+                </p>
+                <p class="blockView">android:imeOptions="actionNext"
+                </p>
+                <p>There are a number of actions that you can set like this. The common ones are:
+                    <ul>
+                        <li><span class="code">actionNone</span> &#45; no action. Displays the Carriage Return button on the keyboard</li>
+                        <li><span class="code">actionNext</span> &#45; input cursor moves to the next text field. Displays the Next button on the keyboard.</li>
+                        <li><span class="code">actionDone</span> &#45; closes the soft input method. Displays the Done button on the keyboard.</li>
+                    </ul>
+                </p>
+                <p>Setting the action also sets the button to replace the Carriage Return button on the keyboard:
+                </p>
+                <a href="images/userInterface/TextFields/textField11.png" class="zoomple"><img src="images/userInterface/TextFields/textField11.png" alt="Setting the imeOptions attribute to actionNext causes the Next button to display" width="400px" class="flowCenter"></a>
+                <p>If you don’t set an action and there is another text field, then the system applies the <span class="code">actionNext</span> default and moves the input cursor to the next text field when the user presses the &#34;Next&#34; button. If there are no more text fields then the <span class="code">actionDone</span> action is applied. A &#34;Done&#34; button is displayed on the keyboard.
+                </p>
+           </aside>
+           <aside>
+           <h3 id="stextField">Getting the Input: Dealing with the Action</h3>     
+                <p>Use an <span class="code">OnEditorActionListener</span> interface to listen for the action. Its callback method, <span class="code">onEditorAction&#40;&#41;</span>, indicates the action type invoked with an action ID such as IME&#95;ACTION&#95;NEXT. For example, here is how you can listen for when the user clicks the &#34;Next&#34; button on the keyboard:
+                </p>
+                <p class="blockView">EditText editTextName = (EditText) findViewById(R.id.editText); editTextName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+                            
+                boolean handled = false;
+                if (i == EditorInfo.<em>IME_ACTION_NEXT</em>) {
+                    // show toast for input
+                    String inputText = textView.getText().toString();
+                    Toast.makeText(MainActivity.this, "Your name is: "
+                            + inputText, Toast.<em>LENGTH_SHORT</em>).show();
+                }
+                return handled;
+            }
+});</p>      
+                <p>Note the following:
+                    <li><span class="code">inputText</span> &#45; We use getText&#40; &#41; to get the text entered by the user. This returns a CharSequence object so we convert it to a String using <span class="code">toString&#40; &#41;</span>. We then assign the result to the <span class="code">inputText</span> String.</li>
+                    <li><span class="code">i</span> &#45; the action identifier. This is the value of the <span class="code">imeOptions</span> attribute that we set in the layout file.</li>
+                    <li>IME&#95;ACTION&#95;NEXT &#45; usually set in the layout file using the <span class="code">imeOptions</span> attribute. The &#34;Next&#34; button displays on the keyboard. When the user presses the &#34;Next&#34; button, the if statement matches and a Toast message displays the name.</li>
+                    <li><span class="code">return</span> handled &#45; it returns false if the input action was not handled. Then there are other text fields and the input cursor jumps to the next one.</li>
+                </p>
+                <p>More information about TextFields can be found in the following link:
+                <a href="http://developer.android.com/guide/topics/ui/controls/text.html" title="Text Fields">http://developer.android.com/guide/topics/ui/controls/text.html</a><br>    
+                </p>
+                
+                
+
+            </aside>
+                <p><a href="#textFields" title="Back to top">Back to top</a><br>&nbsp;</p>
+</div>
+                                
+<!--Buttons Section-->
+                            
+<div id="buttons">
+    
+        <aside role="complementary">
+            <h2 id="button">Buttons</h2>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#wButton">What is a Button?</a></li>
+                    <li><a href="#cButton">Creating a Button</a></li>
+                    <li><a href="#mButton">Making the Button Functional</a></li>
+                </ul>
+            </nav>
+            <p>Button API: <a href="http://developer.android.com/reference/android/widget/Button.html" title="Button" target="_blank">http://developer.android.com/reference/android/widget/Button.html</a></p>
+            <p>Button Developer Guide:<a href="http://developer.android.com/guide/topics/ui/controls/button.html" title="Button Control" target="_blank">http://developer.android.com/guide/topics/ui/controls/button.html</a></p>
+            <aside>
+                <h3 id="wButton">What is a Button?</h3>
+                <a href="images/userInterface/Widgets/widgets3.png"><img src="images/userInterface/Widgets/widgets3.png" alt="Plain Text View" width="200px" class="flowCenter"></a>
+                <p>
+                    Button class represents a push button. Buttons can be pressed or clicked by the user to perform and the button can be made so the application can respond to the click with an action.
+                </p>
+                <p class="Bonus">
+                    &#40;Interesting Fact&#58; Button class actually extends TextView class&#41;
+                </p>
+                <p>
+                    Buttons usually contains text&#44; but can also be made to contain an icon or image.
+                </p>
+            </aside>
+            <aside>
+                <h3 id="cButton">Creating a Button</h3>
+                <p>
+                    To create a Button&#44; open the layout&#95;name.xml where you wish the Button to be displayed. &#40;All layouts are&#40; by default&#40; located in the layout subfolder of the res folder&#41;.
+                </p>
+                <nav role="navigation">
+                    <ul>
+                        <li><a href="#cdButton">Button Creation using the Design Interface</a></li>
+                        <li><a href="#cteButton">Button Creation using XML Text Editor Interface</a></li>
+                    </ul>
+                </nav>
+                <h4 id="cdButton">Button Creation using the Design Interface</h4>
+                <p>
+                    In the Design view you can add a button to the screen by scrolling through the palette on the right side of the screen until you get to the Widget section. In the Widget section you can select Button and drag it onto the screen.
+                </p>
+                <p>
+                    You can double click the button to set the text and id or go to the properties tab on the right and scroll to the appropriate section.
+                    <a href="images/userInterface/Widgets/widgets4.png" class="zoomple"><img src="images/userInterface/Widgets/widgets4.png" alt="Plain Text View" width="500px" class="flowCenter"></a>
+                </p>
+                <h4 id="cteButton">Button Creation using XML Text Editor Interface</h4>
+                <p>
+                    It you want to use the XML Text Editor you can use the following code to add a new Button to the screen.
+                </p>
+                <p class="blockView">&lt;Button
+                    android&#58;layout&#95;width = &ldquo;wrap&#95;content&rdquo;
+                    android&#58;layout&#95;height = &ldquo;wrap&#95;content&rdquo;
+                    android&#58;text = &ldquo;New Button&rdquo;
+                    android&#58;id = &ldquo;&#64;&#43;id/myButton&rdquo;/&gt;</p>
+                <p>
+                    This XML code should be placed within the layout or container that you wish the Button to appear.
+                </p>
+                <p>
+                    When the app is running&#44; the Button with the text New Button will appear on the screen.
+                </p>
+            </aside>
+            <aside>
+                <h3 id="mButton">Making the Button Functional&#40;On&#45;Click Event Handling Listeners&#41;</h3>
+                <p>When a user clicks or presses the Button, it receives an onClickEvent. You can handle this onClickEvent with either and onClickListener in the Activity that hosts the layout that contains the button or you can handle it view an XML attribute. The method you choose to handle the onClickEvent with is up to you.</p>
+                <h4>OnClickListener in Activity</h4>
+                <p>One way of handling the onClickEvent and getting your button to do something is to create an onClickListener in the Activity that hosts the layout that contains the button you want.</p>
+                <p>(Note: If the button is made during runtime then this method of handling click events is necessary in order to get the button to be functional.)</p>
+                <p>First make sure to import the following into the Activity if they are not already imported</p>
+                <p class="blockView">import android.widget.Button;
+import android.view.View;</p>
+                <p>Then you can create a Button which references the button we created. (Often done in the onCreate method).</p>
+                <p class="blockView">Button button = (Button) findViewById(R.id.button_new);</p>
+                <p>Now we can set the onClickListener of this button </p>
+                <p class="blockView">button.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View v) {
+                            // Whatever you want to happen when the button is pressed
+                        }
+                });</p>
+                <p>Whenever the user pressed the button with id button_new, the onClick method for that button’s listener is called.</p>
+                <p>In CS 1331 Introduction to Object Oriented Programming, it is often taught to create a private inner class to handle on-click event listening in Java.</p>
+                <p>For example this private class would be placed inside the Activity which uses the button.</p>
+                <p class="blockView">private class ButtonClickListener implements View.OnClickListener {
+                        public void onClick(View view) {
+                            // Whatever you want to happen when the button is pressed
+                        }
+                }</p>
+                The button could then just call:
+                <p class="blockView"> button.setOnClickListener(new ButtonClickListener());</p>
+                <h4>XML OnClickHandler</h4>
+                <p>Another way to handle the onClickEvent is to add the attribute: </p>
+                <p class="blockView">android:onClick=”buttonMethod”</p>
+                <p>Note: buttonMethod can be anything you want. It is simply the method name that is called when the button is pressed.</p>
+                <p>to your Button element in the XML Layout so that it looks something like this:</p>
+                <p class="blockView">&lt;Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/button_new"
+                    android:onClick="buttonMethod"/></p>
+                <p>Now, within the Activity that uses this layout, you can add the method:</p>
+                <p class="blockView">/** Called when the user presses the button we created */
+public void buttonMethod(View view) {
+	// Whatever you want to happen when the button is pressed
+}</p>
+                <p>It should be noted that this method has to be a public method that returns void and it is located within the method that hosts this layout. The View parameter is the View that was clicked.</p>
+            </aside>
+                <p><a href="#button" title="Back to top">Back to top</a><br>&nbsp;</p> 
+</div>
+                                
+<!--Spinner Section-->
+                            
+<div id="spinner">
+    <h2 id="spinners">Spinners</h2>  
+    <ul>
+        <li><a href="#createSpinner">Creating a Spinner</a></li>
+        <li><a href="#populateSpinner">Populating a Spinner with User Choices</a></li>
+        <li><a href="#listenerSpinner">Making the Spinner Respond to User Selections</a></li>
+    </ul>
+    <p>A Spinner is essentially a drop down box, which allows the user to select one option out of a group of options. A default spinner shows the currently selected option. The selected option can be changed by the user by touching the Spinner. The Spinner displays all the options in a list, from which the user can select a new option. You can use Spinners when you want the user to select an option from the set.</p>
+    <h3 id="createSpinner">Creating a Spinner</h3>
+    <p>To create a Spinner, open the layout_name.xml where you wish the Spinner to be displayed. (All layouts are, by default, located in the layout subfolder of the res folder).</p>
+    <h4>Spinner Creation using the Design Interface</h4>
+    <p>In the Design view you can add a Spinner to the screen by scrolling through the palette on the right side of the screen until you get to the Widget section. In the Widget section you can select Spinner and drag it onto the layout screen.</p>
+    <p>You can double click the Spinner to set the SpinnerMode and the id or go to the properties tab on the right and scroll to the appropriate section.</p>
+     <a href="images/userInterface/Widgets/widgets6.png" class="zoomple"><img src="images/userInterface/Widgets/widgets6.png" alt="List View" width="500px" class="flowCenter"></a>
+    <p>The default SpinnerMode is usually a drop down box. However, a Spinner can also open a Dialog box that will display the list of items, from which the user can select one.</p>
+    
+    <h4>Spinner Creation using XML Text Editor Interface</h4>
+    <p>It you want to use the XML Text Editor you can use the following code to add a new Spinner element to the layout.</p>
+    <p class="blockView">  &lt;Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown" /></p>
+    <p>This XML code should be placed within the layout or container that you wish the Spinner to appear.</p>
+    
+    <h3 id="populateSpinner">Populating a Spinner with User Choices</h3>
+    <p>An empty Spinner is useless so we need to populate it with items we want the user to choose from. These items can come from any source, but must be provided through the use of a SpinnerAdapter (such as an ArrayAdapter).</p>
+    <h4>Method 1: String Array in the strings.xml file</h4>
+    <p>If your choices are predetermined (not created during runtime) then you can add the following element the the strings.xml file (string resource file), which is located in the values folder within the res folder.</p>
+    <p class="blockView">&lt;resources>
+    &lt;string-array name="items_array">
+        &lt;item>Item 1&lt;/item>
+        &lt;item>Item 2&lt;/item>
+        &lt;item>Item 3&lt;/item>
+        &lt;item>Item 4&lt;/item>
+        &lt;item>Item 5&lt;/item>
+    &lt;/string-array>
+&lt;resources/></p>
+    <p>Now, we can supply the Spinner with this array in the Activity that hosts the layout that contains the Spinner we wish to populate. First make sure to import the following into the Activity if they are not already imported.</p>
+    <p class="blockView">import android.widget.Spinner;
+        import android.widget.ArrayAdapter;</p>
+    <p>Then you can create a Spinner which references the Spinner we created. (Often done in the onCreate method).</p>
+    <p class="blockView">Spinner spinner = (Spinner) findViewById(R.id.spinner);</p>
+    <p>Now we can create an ArrayAdapter to adapt the item_array we created in the string.xml file.</p>
+    <p class="blockView">ArrayAdapter&lt;CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.items_array, android.R.layout.simple_spinner_item);
+adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);</p>
+        <p>Finally, we can apply the adapter to the Spinner</p>
+    <p class="blockView">spinner.setAdapter(adapter);</p>
+    <h4>Method 2: String Array in the Activity </h4>
+    <p>Alternatively, you can create an ArrayList of strings in the Activity that hosts the layout that contains the Spinner we wish to populate.</p>
+    <p class="blockView">List&lt;String> stringList = new ArrayList&lt;String>();
+stringList.add(“Item 1”);
+stringList.add(“Item 2”);</p>
+        <p>Then you can create your ArrayAdapter using this ArrayList<String>();</p>
+            <p class="blockView">ArrayAdapter&lt;String> adapter = new ArrayAdapter&lt;String>(this, android.R.layout.simple_spinner_item, stringList);</p>
+    <p>Everything else is the same as Method 1</p>
+    <p class="blockView">adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+spinner.setAdapter(adapter);</p>
+    
+    <h3 id="listenerSpinner">Making the Spinner Respond to User Selections</h3>
+    <p>Now that we have populated the Spinner, we need to make it react when a user selects an option.</p>
+    <p>If you simply want to extract the String name from the selected item you can use the method getSelectedItem() and then just call toString().</p>     
+    <p class="blockView">String selectedItem = spinner.getSelectedItem().toString();</p>
+    <p>This just returns the String of the selected item in the Spinner. You can use this String in your logic in a switch or if/else statement.<br>For Example:</p>
+    <p class="blockView">if(selectedItem().equals(“Item 1”) {
+	// do something 
+} else {
+	// do something else
+}</p>
+    <p>This is kind of a cheap workaround for having to implement an OnItemSelectedListener.</p>
+    <h4>Alternatively:</h4>
+    <p>When a user selects an option from the list, the Spinner receives an On-Item Selected event. To handle this event we must implement OnItemSelectedListener in the Activity we wish to use.</p>
+    <p class="blockView">public class SpinnerActivity extends Activity implements OnItemSelectedListener {
+    public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+        // An item was selected. You can retrieve the selected item using
+        // parent.getItemAtPosition(pos)
+    }
+
+    public void onNothingSelected(AdapterView<?> parent) {
+        // Another interface callback
+    }
+}</p>
+    <p>OnItemSelectedListener just requires onItemSelected and onNothingSelected method. You can then set the listener for the Spinner using setOnItemSelectedListener for the spinner.</p>
+    <p class="blockView">Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        spinner.setOnItemSelectedListener(this);</p>
+    <p>Note: You can use this because you implement the OnItemSelectedListener in “this” Activity.</p>
+    <p><a href="#spinners" title="Back to top">Back to top</a><br>&nbsp;</p> 
+</div>
+                            
+<!--Containers Section-->
+                            
+<div id="container">
+    <h2 id="superContainer">Containers</h2>
+    <li><a href="#ListView">ListViews</a></li>
+    <li><a href="#RadioGroup">RadioGroups</a></li>
+    <p>Containers pour a collection of widgets (and possibly child containers) into specific structures. If you want a form with labels on the left and fields on the right, you need a container. If you want OK and Cancel buttons to be beneath the rest of the form, next to one another, and flush to the right side of the screen, you need a container. Just from a pure XML perspective, if you have multiple widgets (beyond RadioButton widgets in a RadioGroup), you need a container just to have a root element to place the widgets inside.
+    Most GUI toolkits have some notion of layout management, frequently organized into containers. In Java/Swing, for example, you have layout managers like BoxLayout and containers that use them ...
+    </p>
+
+<!-- ListView -->    
+    
+     <h3 id="ListView">ListView</h3>
+    <p>ListViews are containers that hold a scrollable list of items. List items can be inserted into the ListView using an adapter.</p>
+<p>ListView API: <a href="http://developer.android.com/reference/android/widget/ListView.html" title="List View (Widget)" target="_blank">http://developer.android.com/reference/android/widget/ListView.html</a><br>
+    ListView Developer Guide: <a href="http://developer.android.com/guide/topics/ui/layout/listview.html" title="List View (Layout)" target="_blank">http://developer.android.com/guide/topics/ui/layout/listview.html</a><br>
+    </p>
+    <h3>ListView Basics</h3>
+            <li><a href="#createListView">Creating a ListView</a></li>
+            <li><a href="#accessListView">Accessing ListView in an Activity</a></li>
+            <li><a href="#populateListView">Populating a ListView</a></li>
+            <li><a href="#listenerListView">Making ListView respond to actions (Listener)</a></li>
+            <li><a href="#addRemoveListView">Add/Removing Items from ListView</a></li>
+    
+    <h3 id="createListView">Creating a New ListView</h3>
+    <p>To create a ListView go to the layout_name.xml where you wish the List to be displayed. (All layouts are, by default, located in the layout subfolder of the res folder).</p>
+    
+    <h4>ListView Creating using Design Interface</h4>
+    <p>In Design you can simply go the Container section in the Palette on the right side and select the ListView and drag it to the position you wish to place it on the screen.</p>
+    <p>You can change the choiceMode to one of the following:<br>
+        none<br>
+        singleChoice<br>
+        multipleChoice<br>
+        multipleChoiceModal<br>
+        For most cases you will probably use singleChoice.</p>
+    <a href="images/userInterface/Containers/listView_create.png" class="zoomple"><img src="images/userInterface/Containers/listView_create.png" alt="List View" width="500px" class="flowCenter"></a>
+    
+    <h4>ListView Creation using XML Text Editor Interface</h4>
+    <p>It you want to use the XML Text Editor you can use the following code to add a new ListView to the screen.</p>
+    <p class="blockView">&lt;ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:choiceMode="singleChoice"/&gt;</p>    
+    <p>This XML code should be placed within the layout or container that you wish the List to appear.</p>
+<p>This creates a ListView that covers the whole screen.</p>
+    
+    <h3 id="accessListView">Accessing a ListView in an Activity</h3>
+        <p>In order to access this particular ListView in an Activity simply use the following code in the Activity that is using the layout containing our ListView. This code is usually put in the onCreate method of the Activity.</p>
+        <p class="blockView">ListView listView = (ListView) findViewById(R.id.myListView);</p>       
+                        
+    <h3 id="populateListView">Populating a ListView in an Activity</h3>
+        <p>To populate the ListView with items you need to create an ArrayList and an ArrayAdapter. ListViews are filled with labels that are Strings so we will just create a List&lt;String&gt;.</p>
+        <p>The following example creates an ArrayList<String> and populates it with two items.</p>
+        <p class="blockView">List&lt;String&gt; stringList = new ArrayList&lt;String&gt;();
+stringList.add(“Item 1”);
+stringLIst.add(“Item 2”);</p>
+        <p>Now to get this ArrayList into our ListView we need to create an ArrayAdapter. The following code gives an example where stringList is the ArrayList we are adapting to the ListView.</p>
+        <p class="blockView">ArrayAdapter&lt;String&gt; arrayAdapter = new ArrayAdapter&lt;String&gt;(this, android.R.layout.simple_list_item_1, stringList);</p>
+        <p>Finally we add the arrayAdapter to our ListView using the setAdapter method.</p>
+        <p class="blockView">listView.setAdapter(arrayAdapter);</p>
+        <p>Now when we open our applicaiton the ListView will appear with Item 1 and Item 2:</p>
+                        
+    <h3 id="listenerListView">Making a ListView React to user input</h3>
+        <p>To make your ListView react to selections you need to create a Listener. The following code is an example of how to create a Listener. This would be placed in the onCreate method.</p>
+        <p class="blockView">listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView&lt;?&gt; parent, View view, int position, long id)
+            {
+                //Logic when they click it (like a button)
+            }
+});</p>
+        <p class="blockView">listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView&lt;?&gt; parent, View view, int position, long id) 
+            {
+                //Logic when they click it (like a button)
+            }
+ });</p>
+    <p>Now whenever the user clicks on one of the selections in the ListView. It will perform the logic that you place in the onItemClick method</p>
+                        
+    <h3 id="addRemoveListView">Accessing a ListView in an Activity</h3>
+    <p>To add/remove an Item in a ListView live (as in you are not changing Activity).<br>
+All you need to do is add/remove the item from the ArrayList that you created to hold the values for the ListView.<br>
+You then need to call the ArrayAdapter to notify it that the dataset has been changed.<br>
+The following code adds/removes an item from the stringList and then updates the ListView.</p>
+    <p class="blockView">stringList.add(“New Item”);
+arrayAdapter.notifyDataSetChanged();</p>
+    <p>It is very important that you call the notifyDataSetChanged method, otherwise you might crash your application.</p>
+    <p><a href="#containers" title="Back to top">Back to top</a><br>&nbsp;</p>
+    
+<!-- RadioGroup -->                        
+                        
+    <h3 id="RadioGroup">RadioGroup</h3>
+    <p>RadioButtons allow a user to select one option from a set of options (like mulitple choice).</p>
+    <p>RadioButtons are mutually exclusive so in order for their to be a grouping of them you need to place them in a RadioGroup.</p>
+            <li><a href="#createRadioGroup">Creating a RadioGroup</a></li>
+            <li><a href="#accessRadioGroup">Accessing RadioGroup in an Activity</a></li>
+        <h4 id="createRadioGroup">Creating a RadioGroup</h4>
+            <li><a href="#accessRadioGroup">Accessing RadioGroup in an Activity</a></li>
+        <h3 id="createRadioGroup">Creating a RadioGroup</h3>
+             <p>To create a Radio Button grouping (RadioGroup) go to the layout_name.xml where you wish the List to be displayed. (All layouts are, by default, located in the layout subfolder of the res folder).</p>
+    
+    <h4>RadioGroup Creation using Design Interface</h4>
+    <p>In Design you can simply go the Container section in the Palette on the right side and select the RadioGroup and drag it to the position you wish to place it on the screen.</p>
+    <p>Then go to the Widges section in the Palette on the right side and select the RadioButton and drag it into the RadioGroup. You can place as many RadioButtons as you wish.</p>
+    <p>You can also set the RadioButtons to be listed either vertically or horizontally by double clicking the RadioGroup or by setting it in the attributes section</p>
+    <a href="images/userInterface/Containers/radioGroup_create.png" class="zoomple"><img src="images/userInterface/Containers/radioGroup_create.png" alt="List View" width="500px" class="flowCenter"></a>
+                        
+    <h4>RadioGroup Creation using XML Text Editor Interface</h4>
+    <p>It you want to use the XML Text Editor you can use the following code to add a new RadioGroup with two RadioButtons to the screen.</p>
+    <p class="blockView"> &lt;RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:id="@+id/radioGroup">
+
+        &lt;RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton"
+            android:id="@+id/radioButton" />
+
+        &lt;RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton"
+            android:id="@+id/radioButton2" />
+&lt;/RadioGroup></p>
+    <p>This XML code should be placed within the layout or container that you wish the RadioGroup to appear.</p>
+<p>This creates a ListView that covers the whole screen.</p>
+
+    <h3 id="accessRadioGroup">Accessing a RadioGroup in an Activity</h3>
+    <p>To access a RadioGroup in an Activity and get the user's input (which RadioButton did they press) you need to get the RadioGroup and RadioButton and you can simply get the text from the RadioButton and use that to determine the logic.</p>
+    <p>The following code gets the RadioGroup we created, gets the button that was selected, and then gets the Text from that Button.</p>
+    <p class="blockView">RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        RadioButton selectRadio = (RadioButton)findViewById(radioGroup. getCheckedRadioButtonId());
+        String selection = selectRadio.getText().toString();</p>
+    <p><a href="#containers" title="Back to top">Back to top</a><br>&nbsp;</p>    
+                        
+</div>
+                            
+<!--Date and Time Section-->
+                            
+<div id="dateTime">
+    <h2>Date and Time in Android</h2>
+        <ul>
+            <li><a href="#gettingCurrentDateTime">Getting the Current Date and Time</a></li>
+            <li><a href="#formatDateTime">Formatting Date and Time</a></li>
+            <li><a href="#Using Calendar">Using the Calendar Class</a></li>
+            <li><a href="#convertStringToDate">Converting a String to Date</a></li>
+            <li><a href="#convertLongToDate">Converting a long to Date</a></li>
+            <li><a href="#pickers">Android Date/Time Pickers</a></li>
+            <li><a href="#datePickerDialog">Creating a DatePickerDialog</a></li>
+            <li><a href="#timePickerDialog">Creating a TimePickerDialog</a></li>
+        </ul>
+        <p>Handling Dates and Times in Java/Android is often confusing, especially for beginners. In this section we will be going over how to handle Date/Time input in Android.</p>
+    <h3 id="gettingCurrentDateTime">Getting the Current Date and Time</h3>
+    <p>To get the current Date and Time you can use the Calendar class or the Date class, which are both provided by Java, getInstance() method. It is recommended that you use Calendar, however, usually a combination of the two classes is required to fully handle Dates and Time.</p>
+    <p class="blockView">Calendar rightNow = Calendar.getInstance();</p>
+    <p><b>Note:</b> This instance of time is actually the milliseconds from the Epoch, January 1, 1970 00:00:00.000 GMT (Gregorian).</p>
+    
+    <h3 id="formatDateTime">Formatting Date and Time</h3>
+    <p>To format the date, you can use the SimpleDateFormat class.<br>
+    For Example:</p>
+    <p class="blockView">//dd/MM/yy (31/12/99 is December 31, 1999)<br>DateFormat formatDate = new SimpleDateFormat("dd/MM/yy");<br>String myDate = formatDate.format(new Date());<br><br>//or with yyyy/MM/dd (1999/12/31 is December 31, 1999)<br>DateFormat formatDate2 = new<br>SimpleDateFormat(“yyyy/MM/dd”);<br>String myDate2 = formatDate2.format(new Date());</p>
+    <p><b>Note:</b> lowercase yyyy are used for year, uppercase MM are used for months, and lowercase dd is used for days</p>
+    
+    <h3 id="Using Calendar">Using the Calendar class</h3>
+    <p>Calendar provides getters and setters for dates.</p>
+     <p class="blockView">public final int get(int getField);<br>public final int set(int setField, int value);</p>
+    <p>You can use the following int Calendar fields for the int fields</p>
+    <p class="blockView">Calendar.YEAR<br>Calendar.MONTH<br>Calendar.DAY_OF_MONTH<br>Calendar.HOUR<br>Calendar.MINUTE<br>Calendar.SECOND</p>
+    <p>Calendar.MONTH starts at 0 and ends at 11. (January = 0, February = 1, … December = 11)</p>
+    <p>The Calendar Constructor can let you enter in the year, month and day or you can leave it empty.</p>
+    <p class="blockView">Calendar cal = new GregorianCalendar(2015, 01, 25);</p>
+    <p>Now we can change the date using Calendar setter.</p>
+    <p class="blockView">cal.set(Calendar.MONTH, Calendar.MAY);</p>
+    
+    <h3 id="convertStringToDate">Converting a String to Date</h3>
+    <p>The following commands will convert a String representation of a date into a Date object. Note that you need to nest the commands in a try catch block since it is parsing the string. </p>
+    <p class="blockView">try {<br>&#09;Date date = new SimpleDateFormat(“MM/dd/yy).parse(“05/18/05”);<br>} catch(ParseException e) {<br>&#09;e.printStackTrace();<br>}</p>
+    
+    <h3 id="convertLongToDate">Converting a long to Date</h3>
+    <p>Date can also be set using a millisecond representation of the date. This instance of time is actually the milliseconds from the Epoch, January 1, 1970 00:00:00.000 GMT (Gregorian). The following code converts a long to Date.</p>
+     <p class="blockView">private Date millisecondToDate(long milliseconds) {<br>&#09;Date date = new Date(milliseconds);<br>&#09;return date;<br>}</p>
+    
+    <h3 id="pickers">Android Date Time Pickers</h3>
+    <p>In the Android Design layout you will probably notice the DatePicker and TimePicker. These are widgets that allow the user to pick a date and time. However, these widgets are usually fairly large and take up most of the screen (meaning you can less space to work with).</p>
+    <p>Here are some examples of DateTime Pickers.</p>
+    <img  src="images/userInterface/DateTime/date%20time%20picker%202.png" width="150px">
+    <img  src="images/userInterface/DateTime/date%20time%20picker%201.png" width="200px">
+    <p>Therefore, it is highly recommended that you use a DatePickerDialog instead.</p>
+    <p>DatePickerDialog may look different based on the Android platform you are using, but they all do the same thing in the end.</p>
+    
+    <h3 id="datePickerDialog">Creating a DatePickerDialog</h3>
+    <p>The following steps will show you how to create a DatePickerDialog. This Dialog will prompt the user to choose a date.</p>
+    <p>Step 1: Get the Current Time (This is technically optional, but good to help the user).</p>
+     <p class="blockView">Calendar c = Calendar.getInstance();<br>int currentYear = c.get(Calendar.YEAR);<br>int currentMonth = c.get(Calendar.MONTH);<br>int currentDay = c.get(Calendar.DAY_OF_MONTH);</p>
+    <p>Step 2: Create a DatePickerDialog.OnDateSetListener</p>
+    <p class="blockView">DatePickerDialog.OnDateSetListener dateListener = new DatePickerDialog.OnDateSetListener() { <br><br>&#09;@Override<br>&#09;public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {<br>&#09;//When the user presses Done, this method will be called.<br>&#09;//Handle the user picking the date in here.<br>//For example: Setting a String with user input 12/25/2015.<br>&#09;String date = (monthOfYear+1) + “/” + dayOfMonth + “/” + year<br>&#09;}<br>}</p>
+    <p>Step 3: Create the DatePickerDialog</p>
+     <p class="blockView">DatePickerDialog datePicker = new DatePickerDialog(this, dateListener, currentYear, currentMonth, currentDay);</p>
+    <p>The Constructor takes in:<br>
+       &#09; Context: the application context<br>
+       &#09; Listener: used when user selects the date and presses Done<br>
+       &#09; int Year: This is the starting position year for the picker<br>
+       &#09; int Month: This is the starting position month for the picker<br>
+       &#09; int Day: This is the starting position day for the picker</p>
+    <p>I set the year, month and day to the current date (from Step 1), but you can set them to whatever date you want.</p>
+    <p>Step 4: Show the DatePickerDialog</p>
+    <p>Now whenever you want to show the DatePickerDialog you created you just need the following code:</p>
+    <p class="blockView">datePicker.show();</p>
+    
+    <h3 id="timePickerDialog">Creating a TimePickerDialog</h3>
+    <p>TimePickerDialogs are very similar to creating a DatePickerDialog.</p>
+    <p>Step 1: Get the current Time (This is technically optional, but can be good to help the user)</p>
+    <p class="blockView">Calendar cal = Calendar.getInstance();<br>cHour = c.get(Calendar.HOUR_OF_DAY);<br>cMinute = c.get(Calendar.MINUTE);</p>
+    <p>Step 2: Create a TimePickerDialog.OnTimeSetListener</p>
+    <p class="blockView">TimePickerDialog.OnTimeSetListener timeListener = new TimePickerDialog.OnTimeSetListener() {<br><br>&#09;@Override<br>&#09;public void onTimeSet(TimePicker view, int hourOfDay, int minute) {<br>&#09;//When the user selects a time and presses Done, this method will be called.<br>&#09;//Handle the user picking the time in here.<br>&#09;//For example: Setting a String with user input 1:45<br>&#09;String time = hourOfDay + “:” + minute;<br>&#09;}<br>}</p>
+    <p>Step 3: Create a TimePickerDialog</p>
+    <p class="blockView">TimePickerDialog timePicker = new TimePickerDialog(this, timeListener, cHour, cMinute, false);</p>
+    <p>The Constructor for TimePickerDialog takes in<br>
+	&#09;Context: the application context<br>
+	&#09;Listener: used when user selects the time and presses Done<br>
+	&#09;int Hour: This is the starting position hour for the picker<br>
+	&#09;int Minute: This is the starting position minute for the picker<br>
+	&#09;boolean: boolean to determine if it is 24-hour time or not</p>
+    <p>Step 4: Show the TimePickerDialog</p>
+    <p>Now whenever you want to show the TimePickerDialog you created you just need the following code:</p>
+    <p class="blockView">timePicker.show();</p>
+    <p><a href="#dateTime" title="Back to top">Back to top</a><br>&nbsp;</p>
+    
+</div>
+                            
+<!--The End of Tabs-->
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </main>
+        <footer role="contentinfo" class="footerInfo">
+            <p>&copy; <a href="https://developer.android.com/about/index.html" title="Android API" target="_blank">Android API</a>
+        </footer>
+    </body>
+    
+</html>
